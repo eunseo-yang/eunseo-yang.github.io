@@ -40,11 +40,13 @@ h1 {
 
 nav ul {
     list-style: none;
+    align-items: center;
 }
 
 nav li {
     display: inline-block;
     margin: 0 10px;
+    align-items: center;
 }
 
 nav a {
@@ -52,6 +54,7 @@ nav a {
     padding: 5px 10px;
     border-radius: 5px;
     color: #000;
+    align-items: center;
 }
 
 nav a:hover {
