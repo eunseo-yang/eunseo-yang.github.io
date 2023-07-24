@@ -1,4 +1,13 @@
 /* Reset some default styles */
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Italic-VariableFont_wght.ttf') format('woff2'),
+       url('fonts/Raleway-VariableFont_wght.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
