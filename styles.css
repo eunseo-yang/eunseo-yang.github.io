@@ -20,8 +20,8 @@ body {
 header {
     padding: 20px;
     text-align: center;
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     text-align: center;
     padding: 10px;
 }
@@ -43,8 +43,7 @@ nav a {
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: #333;
-    color: #fff;
+    color: #333;
 }
 
 nav a:hover {
@@ -68,8 +67,8 @@ h3 {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     text-align: center;
     padding: 10px;
 }
