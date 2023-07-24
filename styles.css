@@ -20,6 +20,11 @@ h1 {
     align-items: center;
 }
 
+nav {
+   font-family: 'Raleway';
+  margin-bottom: 20px;
+}
+
 body {
     font-family: 'Raleway';
     line-height: 1.6;
