@@ -39,6 +39,7 @@ h1 {
 }
 
 nav ul {
+    margin-bottom: 20px;
     list-style: none;
     align-items: center;
 }
