@@ -1,6 +1,5 @@
 /* Reset some default styles */
 body, h1, h2, h3, p, ul, li {
-    margin: 60%;
     padding: 0;
 }
 
@@ -22,6 +21,11 @@ header {
     width: 60%; /* 콘텐츠 너비를 60%로 설정 */
   max-width: 800px; /* 최대 너비를 800px로 제한 */
     margin: 0 auto; /* 가운데 정렬 */
+}
+
+.container {
+  width: 60%;
+  max-width: 800px;
 }
 
 h1 {
