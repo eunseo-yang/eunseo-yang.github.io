@@ -34,23 +34,27 @@ header {
     padding: 20px;
 }
 
-h1 {
-    margin-bottom: 20px;
-}
-
 nav ul {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     align-items: center;
 }
 
 nav li {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
     display: inline-block;
     margin: 0 10px;
     align-items: center;
 }
 
 nav a {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
