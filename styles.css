@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'Raleway';
   src: url('fonts/Raleway-Italic-VariableFont_wght.ttf') format('woff2'),
-       url('fonts/Raleway-Italic-VariableFont_wght.ttf') format('woff');
+       url('fonts/Raleway-VariableFont_wght.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
