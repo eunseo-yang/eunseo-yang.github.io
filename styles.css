@@ -14,12 +14,6 @@ body, h1, h2, h3, p, ul, li, nav {
     font-family: 'Raleway';
 }
 
-h1 {
-    margin-bottom: 20px;
-    text-align: left; 
-    align-items: center;
-}
-
 body {
     font-family: 'Raleway';
     line-height: 1.6;
@@ -40,12 +34,13 @@ header {
     padding: 20px;
     background-color: #fff;
     color: #000;
-    padding: 20px;
 }
 
 nav {
    font-family: 'Raleway';
    margin-bottom: 20px;
+  text-align: right; 
+  align-items: center;
 }
 
 nav ul {
@@ -57,24 +52,15 @@ nav ul {
 }
 
 nav li {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
     display: inline-block;
     margin: 0 10px;
-    align-items: center;
 }
 
 nav a {
-    margin-bottom: 20px;
-    line-height: 1.6;
-    display: flex;
-    justify-content: space-between;
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
     color: #000;
-    align-items: center;
 }
 
 nav a:hover {
@@ -87,6 +73,12 @@ main {
 
 section {
     margin-bottom: 30px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: left; 
+    align-items: center;
 }
 
 h2 {
