@@ -82,7 +82,7 @@ h1 {
     text-align: left; 
     align-items: center;
     pointer-events: auto;
-    cursor: pointer;
+    cursor: pointer; /* 손모양 포인터 */
 }
 
 h1:hover {
