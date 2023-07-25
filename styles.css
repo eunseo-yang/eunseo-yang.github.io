@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;400&display=swap');
 
 @font-face {
   font-family: 'DM Sans';
@@ -101,6 +101,7 @@ section {
 
 h1 {
     margin-bottom: 5px; /* 상단바 bottom border - h1 글씨 간격 */
+    font-weight: 400;
     text-align: left; 
     align-items: center;
     pointer-events: auto;
