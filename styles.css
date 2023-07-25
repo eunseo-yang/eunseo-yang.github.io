@@ -82,6 +82,7 @@ h1 {
     text-align: left; 
     align-items: center;
     pointer-events: auto;
+    cursor: pointer;
 }
 
 h1:hover {
