@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100&display=swap');
 
 @font-face {
   font-family: 'DM Sans';
@@ -64,7 +64,7 @@ header {
 }
 
 nav {
-    font-family: 'Raleway';
+    font-family: 'DM Sans';
     margin-top: 0; 
     margin-bottom: 5px; /* 상단바 bottom border - h1 글씨 간격 */
     text-align: right; 
