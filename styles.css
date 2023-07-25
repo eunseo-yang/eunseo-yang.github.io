@@ -61,10 +61,12 @@ nav a {
     padding: 5px 10px;
     border-radius: 5px;
     color: #000;
+    transition: background-color 0.3s, color 0.3s; /* hover 효과를 위한 transition 추가 */
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: #ccc; /* hover된 영역을 옅은 gray로 변경 */
+    color: #fff; /* hover 시 글씨를 하얀색으로 변경 */
 }
 
 main {
