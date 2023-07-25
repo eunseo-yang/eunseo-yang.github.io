@@ -28,7 +28,6 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-itmes: center;
     padding: 20px;
     background-color: #fff;
     color: #000;
