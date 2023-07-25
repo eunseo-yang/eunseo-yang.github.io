@@ -42,18 +42,13 @@ header {
 }
 
 nav {
-   font-family: 'Raleway';
-   margin-bottom: 20px;
-  text-align: right; 
-  align-items: center;
-}
-
-nav ul {
+    font-family: 'Raleway';
     margin-bottom: 20px;
+    text-align: right; 
+    align-items: center;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    align-items: center;
 }
 
 nav li {
