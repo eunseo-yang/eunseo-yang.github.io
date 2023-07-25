@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-
-@font-face {
-  font-family: 'Raleway';
-  src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap') format('woff2'),
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Raleway:wght@100&display=swap');
 
 .profile-info {
     display: flex; /* 이미지와 글씨를 가로로 정렬 */
@@ -28,10 +21,10 @@
     margin-left: 40px; /* 글씨와 사진 사이 간격 추가 */
 }
 
-body, h1, h2, h3, p, ul, li, nav {
+body, h2, h3, p, ul, li, nav {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -99,6 +92,7 @@ section {
 }
 
 h1 {
+    font-family: 'Caveat', cursive;
     margin-bottom: 5px; /* 상단바 bottom border - h1 글씨 간격 */
     font-weight: 400;
     text-align: left; 
