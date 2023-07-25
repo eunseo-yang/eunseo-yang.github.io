@@ -78,6 +78,7 @@ h1 {
     margin-bottom: 20px;
     text-align: left; 
     align-items: center;
+    pointer-events: auto;
 }
 
 h2 {
