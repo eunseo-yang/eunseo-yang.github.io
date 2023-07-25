@@ -42,6 +42,7 @@ header {
 
 nav {
     font-family: 'Raleway';
+    margin-top: 0; 
     margin-bottom: 20px;
     text-align: right; 
     display: flex;
