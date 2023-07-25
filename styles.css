@@ -36,7 +36,6 @@ header {
 
 .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #000; 
 }
@@ -45,7 +44,6 @@ nav {
     font-family: 'Raleway';
     margin-bottom: 20px;
     text-align: right; 
-    align-items: center;
     display: flex;
     justify-content: space-between;
     list-style: none;
