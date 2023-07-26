@@ -1,18 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const projectItems = document.querySelectorAll("#projects li");
-
-  projectItems.forEach((item) => {
-    item.addEventListener("click", function () {
-      const projectDescription = item.querySelector("p");
-
-      if (projectDescription.style.display === "block") {
-        projectDescription.style.display = "none";
-      } else {
-        projectDescription.style.display = "block";
-      }
-    });
-  });
-});
+function showDetails(projectNumber) {
+    var projectDetails = document.getElementById("project-details-" + projectNumber);
+    if (projectDetails.style.display === "block") {
+        projectDetails.style.display = "none";
+    } else {
+        projectDetails.style.display = "block";
+    }
+}
 
 document.addEventListener("DOMContentLoaded", function() {
   const homeLink = document.getElementById("home-link");
