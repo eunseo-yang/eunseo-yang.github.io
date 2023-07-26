@@ -129,10 +129,6 @@ footer p {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 90%;
-    text-align: left;  /* Changed to left align */
-    display: flex;
-    justify-content: space-between; /* Added to space between text and icons */
-    align-items: center; /* Added to vertically center the content */
 }
 }
 
