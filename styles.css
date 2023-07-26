@@ -58,7 +58,6 @@ header {
 }
 
 nav {
-    font-weight: 800;
     margin-top: 0; 
     margin-bottom: 5px; /* 상단바 bottom border - h1 글씨 간격 */
     text-align: right; 
@@ -98,7 +97,6 @@ h1 {
     /* font-family: 'Caveat', cursive; */
     font-family: 'Raleway', sans-serif;
     margin-bottom: 5px; /* 상단바 bottom border - h1 글씨 간격 */
-    font-weight: 800;
     text-align: left; 
     align-items: center;
     pointer-events: auto;
