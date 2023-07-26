@@ -174,8 +174,11 @@ a:hover {
 
 .project-details {
     display: none;
+    position: absolute; /* 추가: 절대 위치 설정 */
+    top: 0; /* 추가: 상단 정렬 */
     padding: 10px;
     background-color: #f0f0f0;
+    transition: width 0.3s; /* 추가: 확장 애니메이션을 위한 트랜지션 설정 */
 }
 
 .project-details p {margin: 5px 0;}
