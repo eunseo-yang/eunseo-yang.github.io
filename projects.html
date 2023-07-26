@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eunseo Yang</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1 id="home-link">Eunseo Yang</h1>
+        <nav>
+            <ul>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="projects">
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1" class="project-image" onclick="showDetails(1)">
+                <div class="project-info">
+                    <h2>Project 1</h2>
+                    <p>Contributor: Eunseo Yang</p>
+                    <p>Date: June 2023</p>
+                </div>
+                <div class="project-details" id="project-details-1">
+                    <p>Project 1 details go here...</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt massa et nisi pharetra, eu pellentesque elit sagittis.</p>
+                </div>
+            </div>
 
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2" class="project-image" onclick="showDetails(2)">
+                <div class="project-info">
+                    <h2>Project 2</h2>
+                    <p>Contributor: Jane Smith</p>
+                    <p>Date: August 2023</p>
+                </div>
+                <div class="project-details" id="project-details-2">
+                    <p>Project 2 details go here...</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt massa et nisi pharetra, eu pellentesque elit sagittis.</p>
+                </div>
+            </div>
+            <!-- 추가적인 프로젝트 정보들 추가 -->
+        </section>
+    </main>
+
+      <footer>
+        <p>Made by Eunseo Yang/eunseo@gmail.com</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
