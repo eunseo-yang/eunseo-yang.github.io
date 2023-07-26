@@ -1,25 +1,27 @@
 function showDetails(projectNumber) {
     const projectDetails = document.getElementById(`project-details-${projectNumber}`);
     const project = document.getElementById(`project-${projectNumber}`);
+    
     if (projectDetails.style.display === 'none') {
         projectDetails.style.display = 'block';
-        const boundingRect = project.getBoundingClientRect();
-        const leftSpace = boundingRect.left;
-        const rightSpace = window.innerWidth - boundingRect.right;
+        const rect = project.getBoundingClientRect();
+        const projectLeft = rect.left;
+        const projectRight = window.innerWidth - rect.right;
         
-        if (leftSpace > rightSpace) {
-            // 왼쪽에 더 많은 공간이 있는 경우
-            projectDetails.style.left = 0;
-            projectDetails.style.right = 'auto';
-            projectDetails.style.width = 'calc(80% - 20px)';
+        if (projectLeft < projectRight) {
+            project.style.width = '80%';
+            project.style.left = '0';
+            project.style.right = '';
         } else {
-            // 오른쪽에 더 많은 공간이 있는 경우
-            projectDetails.style.right = 0;
-            projectDetails.style.left = 'auto';
-            projectDetails.style.width = 'calc(80% - 20px)';
+            project.style.width = '80%';
+            project.style.right = '0';
+            project.style.left = '';
         }
     } else {
         projectDetails.style.display = 'none';
+        project.style.width = '';
+        project.style.left = '';
+        project.style.right = '';
     }
 }
 
