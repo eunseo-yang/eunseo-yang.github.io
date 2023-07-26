@@ -185,6 +185,14 @@ a:hover {
     z-index: 1;
 }
 
+.project-details.left {
+    left: 0;
+}
+
+.project-details.right {
+    right: 0;
+}
+
 .project-details p {margin: 5px 0;}
 
 /* Responsive styles for smaller screens */
