@@ -180,8 +180,6 @@ a:hover {
     padding: 10px;
     background-color: #f0f0f0;
     position: absolute;
-    left: 0;
-    right: 0; /* 오른쪽으로도 최대한 확장 */
     width: 80%;
     max-width: 800px;
     z-index: 1;
