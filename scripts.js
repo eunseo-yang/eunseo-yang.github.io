@@ -1,19 +1,17 @@
 function showDetails(projectNumber) {
     const projectDetails = document.getElementById(`project-details-${projectNumber}`);
     const project = document.getElementById(`project-${projectNumber}`);
+    
     if (projectDetails.style.display === 'none') {
         projectDetails.style.display = 'block';
+        project.style.width = '80%';
         if (project.classList.contains('left')) {
-            project.style.left = 0;
-            project.style.width = '80%';
-            project.style.margin-right = 'auto';
-        } else {
-            project.style.right = 0;
-            project.style.width = '80%';
-            project.style.margin-left = 'auto';
+            project.style.marginRight = 'auto';
+            project.style.marginLeft = '0';
         }
     } else {
         projectDetails.style.display = 'none';
+        project.style.width = 'initial';
     }
 }
 
