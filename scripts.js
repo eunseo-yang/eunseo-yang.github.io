@@ -4,13 +4,13 @@ function showDetails(projectNumber) {
     if (projectDetails.style.display === 'none') {
         projectDetails.style.display = 'block';
         if (project.classList.contains('left')) {
-            projectDetails.style.left = 0;
-            projectDetails.style.width = '80%';
-            projectDetails.style.margin-right = 'auto';
+            project.style.left = 0;
+            project.style.width = '80%';
+            project.style.margin-right = 'auto';
         } else {
-            projectDetails.style.right = 0;
-            projectDetails.style.width = '80%';
-            projectDetails.style.margin-left = 'auto';
+            project.style.right = 0;
+            project.style.width = '80%';
+            project.style.margin-left = 'auto';
         }
     } else {
         projectDetails.style.display = 'none';
