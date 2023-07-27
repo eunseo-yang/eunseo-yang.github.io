@@ -1,6 +1,5 @@
 function showDetails(projectNumber) {
     const projectDetails = document.getElementById(`project-details-${projectNumber}`);
-    const project = document.getElementById(`project-${projectNumber}`);
     
     if (projectDetails.style.display === 'none') {
         projectDetails.style.display = 'block';
