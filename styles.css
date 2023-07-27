@@ -161,6 +161,16 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  scroll-snap-align: center; /* Snap each project to the center of the container */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.project:last-child {
+  margin-right: 0; /* Remove margin for the last project to prevent empty space */
 }
 
 .project {
@@ -179,13 +189,35 @@ a:hover {
 .arrow-container {
   display: flex;
   justify-content: center;
+  align-items: center; /* Align arrows vertically in the middle */
   margin-top: 20px;
 }
 
 .arrow {
-  font-size: 20px;
-  margin: 0 10px;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.arrow:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); /* Add a slight scale-up effect on hover */
+}
+
+.arrow-left {
+  margin-right: 10px; /* Add some spacing between the arrows */
+}
+
+.arrow-right {
+  margin-left: 10px;
 }
 
 /* Responsive styles for smaller screens */
