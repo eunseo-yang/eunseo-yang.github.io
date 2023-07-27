@@ -219,11 +219,11 @@ a:hover {
   transform: scale(1.1); /* Add a slight scale-up effect on hover */
 }
 
-.arrow-left {
+.arrow arrow-left {
   margin-right: 10px; /* Add some spacing between the arrows */
 }
 
-.arrow-right {
+.arrow arrow-right {
   margin-left: 10px;
 }
 
