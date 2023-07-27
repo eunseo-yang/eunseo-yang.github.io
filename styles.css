@@ -144,10 +144,6 @@ a:hover {
     color: #0056b3;
 }
 
-.about-me-info {
-    padding: 20px;
-}
-
 /* Style the list items within the about-me-info container */
 .about-me-info ul {
     list-style: disc;
