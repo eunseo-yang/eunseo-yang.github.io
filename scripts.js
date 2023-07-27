@@ -1,10 +1,9 @@
 function showDetails(projectNumber) {
-    const projectDetails = document.getElementById(`project-details-${projectNumber}`);
-    
-    if (projectDetails.style.display === 'none') {
-        projectDetails.style.display = 'block';
+    var projectDetails = document.getElementById("project-details-" + projectNumber);
+    if (projectDetails.style.display === "block") {
+        projectDetails.style.display = "none";
     } else {
-        projectDetails.style.display = 'none';
+        projectDetails.style.display = "block";
     }
 }
 
