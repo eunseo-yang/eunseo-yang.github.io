@@ -195,8 +195,8 @@ a:hover {
 
 .arrow-container {
   display: flex;
-  justify-content: center;
-  align-items: center; /* Align arrows vertically in the middle */
+  justify-content: space-between; /* Distribute arrows at both ends */
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -216,15 +216,7 @@ a:hover {
 
 .arrow:hover {
   background-color: #0056b3;
-  transform: scale(1.1); /* Add a slight scale-up effect on hover */
-}
-
-.arrow arrow-left {
-  margin-right: 10px; /* Add some spacing between the arrows */
-}
-
-.arrow arrow-right {
-  margin-left: 10px;
+  transform: scale(1.1);
 }
 
 /* Responsive styles for smaller screens */
