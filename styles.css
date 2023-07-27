@@ -56,7 +56,6 @@ header {
 }
 
 nav {
-    font-family: 'Kalam', cursive;
     margin-top: 0; 
     margin-bottom: 5px; /* 상단바 bottom border - h1 글씨 간격 */
     text-align: right; 
@@ -71,6 +70,7 @@ nav li {
 }
 
 nav a {
+    font-family: 'Kalam', cursive;
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -104,6 +104,7 @@ h1:hover {
 }
 
 h2 {
+    font-family: 'Kalam', cursive;
     margin-bottom: 10px;
 }
 
