@@ -172,20 +172,15 @@ a:hover {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* 요소들을 가로 축 방향으로 공간을 벌리며 정렬 */
-    width: 80%;
 }
 
 .project {
-    flex-basis: 48%; /* 각 요소의 기본 너비를 48%로 설정하여 두 개의 요소가 한 줄에 나오도록 함 */
     margin: 20px;
-    flex-basis: calc(50% - 20px); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
-    position: relative; /* 프로젝트 요소에 절대 위치를 사용하기 위해 설정 */
 }
 
 .project:hover {
@@ -214,14 +209,6 @@ a:hover {
     width: 80%;
     max-width: 800px;
     z-index: 1;
-}
-
-.project-details.left {
-    left: 0;
-}
-
-.project-details.right {
-    right: 0;
 }
 
 .project-details p {margin: 5px 0;}
