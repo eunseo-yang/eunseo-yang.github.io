@@ -179,6 +179,13 @@ a:hover {
   border: 1px solid #ccc;
   padding: 10px;
   box-sizing: border-box;
+
+  flex-shrink: 0;
+  box-sizing: border-box;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease;
+  border: 2px solid #ccc; /* Add thicker border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 .project img {
