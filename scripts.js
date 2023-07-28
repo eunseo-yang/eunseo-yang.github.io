@@ -1,7 +1,7 @@
 const projectsWrapper = document.querySelector('.projects-wrapper');
 const prevArrow = document.getElementById('prev');
 const nextArrow = document.getElementById('next');
-const projectWidth = 48; // The width percentage of each project item
+const projectWidth = 23; // The width percentage of each project item
 
 let currentPosition = 0;
 const numProjectsPerPage = 4;
@@ -24,6 +24,7 @@ nextArrow.addEventListener('click', () => {
 function updateProjectsPosition() {
   projectsWrapper.style.transform = `translateX(-${currentPosition}%)`;
 }
+
 
 document.addEventListener("DOMContentLoaded", function() {
   const homeLink = document.getElementById("home-link");
