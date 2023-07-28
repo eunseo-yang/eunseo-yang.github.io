@@ -169,17 +169,12 @@ a:hover {
   transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
-.project:last-child {
-  margin-right: 0; /* Remove margin for the last project to prevent empty space */
-}
-
 .project {
-  width: 48%;
+  width: 23%; /* Update the width to 23% */
   margin-bottom: 20px;
   border: 1px solid #ccc;
   padding: 10px;
   box-sizing: border-box;
-
   flex-shrink: 0;
   box-sizing: border-box;
   scroll-snap-align: center;
@@ -187,7 +182,9 @@ a:hover {
   border: 2px solid #ccc; /* Add thicker border */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
-
+.project:last-child {
+  margin-right: 0; /* Remove margin for the last project to prevent empty space */
+}
 .project img {
   width: 100%;
   height: auto;
