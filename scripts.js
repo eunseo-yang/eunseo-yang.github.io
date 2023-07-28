@@ -23,7 +23,7 @@ nextArrow.addEventListener('click', () => {
 
 function updateProjectsPosition() {
   projectsWrapper.style.transform = `translateX(-${currentPosition}%)`;
-}
+};
 
 
 document.addEventListener("DOMContentLoaded", function() {
