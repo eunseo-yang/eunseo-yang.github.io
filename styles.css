@@ -204,7 +204,7 @@ a:hover {
   font-size: 30px;
   width: 40px;
   height: 40px;
-  background-color: #007bff;
+  background-color: #ccc;
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -212,11 +212,13 @@ a:hover {
   align-items: center;
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
+padding: 5px; /* 원하는 크기로 조정 */
 }
 
 .arrow:hover {
   background-color: #0056b3;
   transform: scale(1.1);
+padding: 5px; /* 원하는 크기로 조정 */
 }
 
 /* Responsive styles for smaller screens */
