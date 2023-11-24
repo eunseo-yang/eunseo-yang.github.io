@@ -65,6 +65,7 @@ nav {
 nav li {
     display: inline-block;
     margin: 0 10px;
+    font-size: 16px;
 }
 
 nav a {
@@ -128,7 +129,7 @@ footer p {
 
 li {
     margin-bottom: 20px;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 a {
