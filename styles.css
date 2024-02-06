@@ -12,10 +12,10 @@
     width: 300px;
     height: 300px; 
     border-radius: 50%; 
-    border: 5px solid #ccc; 
+    border: 5px solid #eee;
     margin-top: 30px;
     margin-bottom: 30px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-text {margin-left: 40px; }
