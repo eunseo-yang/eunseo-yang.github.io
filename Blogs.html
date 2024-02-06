@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eunseo Yang</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+      body { font-family: Arial, sans-serif; }
+      .publications { max-width: 1200px; margin: auto; }
+      .publication { display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; }
+      .publication-image { flex: 1; }
+      .publication-image img { width: 100%; max-width: 200px; height: auto; }
+      .publication-content { flex: 2; padding-left: 20px; }
+      .publication-title { font-size: 24px; font-weight: bold; margin-bottom: 10px; }
+      .publication-authors { font-size: 18px; margin-bottom: 5px; }
+      .publication-details { font-size: 16px; margin-bottom: 20px; }
+      .publication-pdf { text-decoration: none; color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; font-size: 16px; }
+      .publication-pdf:hover { background-color: #0056b3; }
+    </style>
 </head>
 <body>
         <header>
@@ -21,8 +33,35 @@
         
         <main>
 
-                 <h2>Building...</h2>
-
+            <div class="publications">
+              <!-- Publication 1 -->
+              <div class="publication">
+                <div class="publication-image">
+                  <img src="논문1의 첫 페이지 이미지 URL" alt="논문1의 첫 페이지">
+                </div>
+                <div class="publication-content">
+                  <div class="publication-title">AVOCUS: A Voice Customization System for Online Personas</div>
+                  <div class="publication-authors">Hyeonjeong Byeon, Seungjin Ha, Uran Oh</div>
+                  <div class="publication-details">Extended Abstracts of the 2023 CHI Conference on Human Factors in Computing Systems</div>
+                  <div class="publication-year">2023</div>
+                  <a href="논문1 PDF 파일 URL" class="publication-pdf" target="_blank">PDF</a>
+                </div>
+              </div>
+              <!-- Publication 2 -->
+              <div class="publication">
+                <div class="publication-image">
+                  <img src="논문2의 첫 페이지 이미지 URL" alt="논문2의 첫 페이지">
+                </div>
+                <div class="publication-content">
+                  <div class="publication-title">Understanding tensions in music accessibility through song signing for and with d/Deaf and Non-d/Deaf persons</div>
+                  <div class="publication-authors">Suhyeon Yoo, Georgianna Lin, Hyeonjeong Byeon, Amy S Hwang, Khai Nhut Truong</div>
+                  <div class="publication-details">Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems</div>
+                  <div class="publication-year">2023</div>
+                  <a href="논문2 PDF 파일 URL" class="publication-pdf" target="_blank">PDF</a>
+                </div>
+              </div>
+              <!-- Add more publications as needed -->
+            </div>
         </main>
 
     <footer>
