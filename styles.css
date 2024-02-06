@@ -12,8 +12,18 @@
 .publication-title { font-size: 15px; font-weight: bold; margin-bottom: 10px; }
 .publication-authors { font-size: 15px; margin-bottom: 5px; }
 .publication-details { font-size: 15px; margin-bottom: 20px; }
-.publication-pdf { text-decoration: none; color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; font-size: 15px; }
-.publication-pdf:hover { background-color: #0056b3; }
+.publication-pdf {
+    text-decoration: none;
+    color: black; /* Text color */
+    background-color: white; /* Background color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 2px solid black; /* Border color */
+    transition: color 0.3s, border-color 0.3s; /* Smooth transition for color and border */
+}
+.publication-pdf:hover {color: blue; border-color: blue;}
+
 
 
 .profile-info {
