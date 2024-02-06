@@ -6,25 +6,35 @@
 <link rel="stylesheet" href="styles.css">
 <title>나의 논문들</title>
 <style>
-  .publications { display: flex; margin-top: 20px; }
-  .publication { display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; }
-  .publication-image { flex: 1; }
-  .publication-image img { width: 15%; padding-right: 20px; }
-  .publication-content { flex: 2; padding-left: 20px; }
-  .publication-title { font-size: 15px; font-weight: bold; margin-bottom: 10px; }
-  .publication-authors { font-size: 15px; margin-bottom: 5px; }
-  .publication-details { width: 85%; font-size: 15px; margin-bottom: 20px; }
-  .publication-pdf {
+        .publications-container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .publication-image {
+            width: 20%;
+            padding-right: 20px;
+        }
+
+        .publication-details {
+            width: 80%;
+        }
+
+        .publication-pdf {
             text-decoration: none;
-            color: black; 
-            background-color: white;
-            padding: 5px 20px;
+            color: black; /* Text color */
+            background-color: white; /* Background color */
+            padding: 10px 20px;
             border-radius: 5px;
-            font-size: 10px;
+            font-size: 15px;
             border: 2px solid black; /* Border color */
             transition: color 0.3s, border-color 0.3s; /* Smooth transition for color and border */
         }
-  .publication-pdf:hover { color: blue;border-color: blue; }
+
+        .publication-pdf:hover {
+            color: blue; /* Text color on hover */
+            border-color: blue; /* Border color on hover */
+        }
 </style>
   
 </head>
