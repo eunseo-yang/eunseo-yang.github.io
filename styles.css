@@ -3,29 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap'); /* font-family: 'Antic Slab', serif; */
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap'); /* font-family: 'Poiret One', sans-serif; */
 
-
-.publications { max-width: 1200px; margin: auto; }
-.publication { display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; }
-.publication-image { flex: 1; }
-.publication-image img { width: 100%; max-width: 200px; height: auto; }
-.publication-content { flex: 2; padding-left: 20px; }
-.publication-title { font-size: 15px; font-weight: bold; margin-bottom: 10px; }
-.publication-authors { font-size: 15px; margin-bottom: 5px; }
-.publication-details { font-size: 15px; margin-bottom: 20px; }
-.publication-pdf {
-    text-decoration: none;
-    color: black; /* Text color */
-    background-color: white; /* Background color */
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 15px;
-    border: 2px solid black; /* Border color */
-    transition: color 0.3s, border-color 0.3s; /* Smooth transition for color and border */
-}
-.publication-pdf:hover {color: blue; border-color: blue;}
-
-
-
 .profile-info {
     display: flex; /* 이미지와 글씨를 가로로 정렬 */
     align-items: center; /* 세로 방향으로 중앙 정렬 */
