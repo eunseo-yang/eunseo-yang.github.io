@@ -8,15 +8,38 @@
 <style>
   .publications { max-width: 1200px; margin: auto; }
   .publication { display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; }
-  .publication-image { flex: 1; }
-  .publication-image img { width: 100%; max-width: 200px; height: auto; }
+  
+  /* 이미지 크기를 줄임 */
+  .publication-image { flex: 0 0 15%; /* 이미지가 차지하는 공간을 15%로 고정 */ }
+  .publication-image img { max-width: 100%; height: auto; }
+  
   .publication-content { flex: 2; padding-left: 20px; }
-  .publication-title { font-size: 24px; font-weight: bold; margin-bottom: 10px; }
-  .publication-authors { font-size: 18px; margin-bottom: 5px; }
-  .publication-details { font-size: 16px; margin-bottom: 20px; }
-  .publication-pdf { text-decoration: none; color: black; background-color: white; padding: 5px 20px; border-radius: 5px; font-size: 16px; }
-  .publication-pdf:hover { background-color: blue; }
+  
+  /* 글자 폰트 크기를 줄임 */
+  .publication-title { font-size: 20px; /* 제목 크기를 20px로 줄임 */ font-weight: bold; margin-bottom: 10px; }
+  .publication-authors { font-size: 15px; /* 저자 크기를 15px로 줄임 */ margin-bottom: 5px; }
+  .publication-details { font-size: 14px; /* 상세 정보 크기를 14px로 줄임 */ margin-bottom: 20px; }
+  
+  /* PDF 버튼 스타일 변경 */
+  .publication-pdf { 
+    text-decoration: none; 
+    color: black; 
+    background-color: white; 
+    padding: 5px 20px; 
+    border-radius: 5px; 
+    font-size: 14px; /* 버튼 글자 크기를 14px로 줄임 */
+    border: 2px solid black; /* 검은색 테두리 추가 */
+    transition: color 0.3s, border-color 0.3s; /* 색상과 테두리 색상 전환 효과 추가 */
+  }
+  
+  /* 호버 시 테두리와 글자 색상만 변경 */
+  .publication-pdf:hover { 
+    color: blue; /* 글자 색상을 파란색으로 변경 */
+    border-color: blue; /* 테두리 색상을 파란색으로 변경 */
+    background-color: white; /* 배경 색상을 그대로 유지 */
+  }
 </style>
+
   
 </head>
 <body>
