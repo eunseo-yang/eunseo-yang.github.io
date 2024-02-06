@@ -1,98 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eunseo Yang</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .publications-container {display: flex; margin-top: 5px;}
-        .publication-image {width: 15%; padding-right: 20px;}
-        .publication-details {width: 85%;}
-        .publication-pdf {
-            text-decoration: none;
-            color: black; 
-            background-color: white; 
-            padding: 10px 10px;
-            border-radius: 3px;
-            font-size: 10px;
-            border: 1px solid black; 
-            transition: color 0.3s, border-color 0.3s; 
-        }
-        .publication-pdf:hover {color: blue; border-color: blue; }
-    </style>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나의 논문들</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  .publications { max-width: 1200px; margin: auto; }
+  .publication { display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; }
+  .publication-image { flex: 1; }
+  .publication-image img { width: 100%; max-width: 200px; height: auto; }
+  .publication-content { flex: 2; padding-left: 20px; }
+  .publication-title { font-size: 24px; font-weight: bold; margin-bottom: 10px; }
+  .publication-authors { font-size: 18px; margin-bottom: 5px; }
+  .publication-details { font-size: 16px; margin-bottom: 20px; }
+  .publication-pdf { text-decoration: none; color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; font-size: 16px; }
+  .publication-pdf:hover { background-color: #0056b3; }
+</style>
 </head>
 <body>
-    
-    <header>
-        <h1 id="home-link">Eunseo Yang</h1>
-        <nav>
-            <ul>
-                <li><a href="HCI.html">HCI News</a></li>
-                <li><a href="VUI.html">VUI</a></li>
-                <li><a href="Blogs.html">Blogs</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="profile-info">
-        <img src="img/profile.jpg" alt="My Profile" class="profile-image">
-        <div class="profile-text">
-            <h2>Human-AI Interaction Blog</h2>
-            <p>Hello there! I'm a graduate student researching ways to make technology interact with us as naturally as a conversation. My academic exploration revolves around Conversational Agents, Adaptive User Interaction, and context-aware AI systems. I aim to create AI systems that sensitively detect human states and situations, responding with perfectly tailored services. While my focus is primarily on voice-based chatbots, I also hold a keen interest in various other types of conversational agents. 
-
-            <br>On this site, I'll be delving into HCI concepts, reviewing applied language model papers, and exploring AI services, all with the aim of improving how we live and work with artificial intelligence technology. </p>
-        </div>
+<div class="publications">
+  <!-- Publication 1 -->
+  <div class="publication">
+    <div class="publication-image">
+      <img src="논문1의 첫 페이지 이미지 URL" alt="논문1의 첫 페이지">
     </div>
+    <div class="publication-content">
+      <div class="publication-title">AVOCUS: A Voice Customization System for Online Personas</div>
+      <div class="publication-authors">Hyeonjeong Byeon, Seungjin Ha, Uran Oh</div>
+      <div class="publication-details">Extended Abstracts of the 2023 CHI Conference on Human Factors in Computing Systems</div>
+      <div class="publication-year">2023</div>
+      <a href="논문1 PDF 파일 URL" class="publication-pdf" target="_blank">PDF</a>
+    </div>
+  </div>
+  <!-- Publication 2 -->
+  <div class="publication">
+    <div class="publication-image">
+      <img src="논문2의 첫 페이지 이미지 URL" alt="논문2의 첫 페이지">
+    </div>
+    <div class="publication-content">
+      <div class="publication-title">Understanding tensions in music accessibility through song signing for and with d/Deaf and Non-d/Deaf persons</div>
+      <div class="publication-authors">Suhyeon Yoo, Georgianna Lin, Hyeonjeong Byeon, Amy S Hwang, Khai Nhut Truong</div>
+      <div class="publication-details">Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems</div>
+      <div class="publication-year">2023</div>
+      <a href="논문2 PDF 파일 URL" class="publication-pdf" target="_blank">PDF</a>
+    </div>
+  </div>
+  <!-- Add more publications as needed -->
+</div>
 
-    <main>
-        <section id="home">
-            <h2>About Me</h2>
-             <div class="about-me-info">
-                <ul>
-                    <li> <strong>Human-Computer Interaction Lab (09/2023-present), Ewha Womans University.</strong> <br>I've started my master's program! <a href="https://hcil-ewha.github.io/homepage/">HCIL@EWHA</a> </li>
-                    <li> <strong>Kyung Hee University (KHU) Medical Center (11/2022-7/2023).</strong> <br>I worked as an AI researcher making a diagnosis-assisted tool. </li>
-                    <li> <strong>AI Computing Platform Lab (2022), Ewha Womans University.</strong> <br>I worked as an edge AI research intern. <a href="https://acpl.ewha.ac.kr/">ACPL@EWHA</a> </li> 
-                    <li> <strong>Bio & Nano Electro-Mechanics Lab (2020-2022), Ewha Womans University.</strong> <br>I worked as an undergraduate researcher on AI algorithms of signal detection and object detection. <a href="https://sites.google.com/view/bnem-ewha/home?authuser=0">BNEM@EWHA</a></li>
-                </ul> 
-             </div>
-        </section>
-        <br>        
-        <section id="publications">
-            <h2>Publications</h2>
-            <div class="publications-container">
-                <div class="publication-image">
-                    <img src="img/Paper1.png" alt="Publication 1">
-                </div>
-                <div class="publication-details">
-                    <h2>Machine Learning-Assisted Identification of Single-Layer Graphene via Color Variation Analysis</h2>
-                    <p><strong>Eunseo Yang</strong>, Miri Seo, Hanee Rhee, Yugyeong Je, Hyunjeong Jeong and Sang Wook Lee</p>
-                    <p>Keywords: machine learning, graphene, support vector machine</p>
-                    <a href="paper/Paper1.pdf" class="publication-pdf" target="_blank">PDF</a>
-                </div>
-            </div>
-            <!-- Repeat for other publications as needed -->
-            <div class="publications-container">
-                <div class="publication-image">
-                    <img src="img/Paper2.png" alt="Publication 2">
-                </div>
-                <div class="publication-details">
-                    <h2>Classifiable Limiting Mass Change Detection in a Graphene Resonator Using Applied Machine Learning</h2>
-                    <br>Miri Seo, <strong>Eunseo Yang</strong>, Dong Hoon Shin, Yugyeong Je, Chirlmin Joo, Kookjin Lee and Sang Wook Lee</br>
-                    <br>Keywords:applied machine learning, deep learning, graphene, mass detection, resonator</br>
-                    <a href="paper/Paper2.pdf" class="publication-pdf" target="_blank">PDF</a>
-                </div>
-            </div>
-        </section>
-    
-    </main>
-
-    <footer>
-        <p>Made by Eunseo Yang/eunseo1092@gmail.com</p>
-    </footer>
-    
-    <script src="scripts.js"></script>
 </body>
 </html>
