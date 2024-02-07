@@ -6,69 +6,91 @@
     <title>Eunseo Yang</title>
     <link rel="stylesheet" href="../styles.css">
     <style>
-        body { font-family: Arial, sans-serif; }
-        .container { max-width: 800px; margin: auto; padding: 20px; }
-        img { max-width: 100%; }
-        .image-caption { text-align: center; font-style: italic; margin-bottom: 20px; }
-        .paper-details, .content, .download-section { margin-bottom: 20px; }
-        .paper-details h2, .content h2, .download-section h2 { margin-bottom: 10px; }
-        .paper-details p, .content p { margin-bottom: 10px; }
-        .download-section a { display: inline-block; background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        header {background: #333;color: #fff;padding-top: 30px;min-height: 70px;border-bottom: #0779e4 3px solid;}
+        header a {color: #fff;text-decoration: none;text-transform: uppercase;font-size: 16px;}
+        .container {padding: 20px;max-width: 800px;margin: auto;background: #fff;box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);}
+        img {max-width: 100%;display: block;margin: auto;}
+        .image-caption {text-align: center;font-style: italic;margin-bottom: 20px;color: #777;}
+        .paper-details, .content, .download-section {margin-bottom: 20px;}
+        .paper-details h2, .content h2, .download-section h2 {margin-bottom: 10px;color: #0779e4;}
+        .paper-details p, .content p {margin-bottom: 10px;}
+        .download-section a {
+            display: inline-block;
+            background-color: #fff;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+        }
+        .download-section a:hover {background-color: #0779e4;color: #fff;}
+        .post-date, .post-author {
+            font-size: 12px;
+            color: #777;
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-        <header>
+    <header>
+        <div class="container">
             <h1 id="home-link">Eunseo Yang</h1>
             <nav>
                 <ul>
-                <li><a href="../HCI.html">HCI</a></li>
-                <li><a href="../VUI.html">VUI</a></li>
-                <li><a href="../Blogs.html">Blogs</a></li>
-                <li><a href="../Contact.html">Contact</a></li>
+                    <li><a href="../HCI.html">HCI</a></li>
+                    <li><a href="../VUI.html">VUI</a></li>
+                    <li><a href="../Blogs.html">Blogs</a></li>
+                    <li><a href="../Contact.html">Contact</a></li>
                 </ul>
             </nav>
-        </header>
-        
-        <main>
+        </div>
+    </header>
 
-            <div class="container">
-                <div class="image-section">
-                    <img src="img/review_paper1_img1.png" alt="Image description">
-                    <p class="image-caption">Figure 1: 논문 대표 이미지</p>
-                </div>
-            
-                <!-- Paper Details -->
-                <div class="paper-details">
-                    <h2>Paper Title</h2>
-                    <p><strong>Authors:</strong> Author 1, Author 2, Author 3</p>
-                    <p><strong>Keywords:</strong> Keyword1, Keyword2, Keyword3</p>
-                    <p><strong>Conference:</strong> Conference Name, Year</p>
-                    <p><strong>Brief Introduction:</strong> This paper discusses...</p>
-                </div>
-            
-                <!-- Content with Subheadings -->
-                <div class="content">
-                    <h2>Main Heading</h2>
-                    <h3>Subheading 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <h3>Subheading 2</h3>
-                    <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim...</p>
-                    <!-- Add more subheadings and paragraphs as needed -->
-                </div>
-            
-                <!-- Download Section -->
-                <div class="download-section">
-                    <h2>Download Presentation</h2>
-                    <a href="path/to/your/presentation.ppt" download>Download PPT</a>
-                </div>
+    <main>
+        <div class="container">
+            <!-- Image Section -->
+            <div class="image-section">
+                <img src="img/review_paper1_img1.png" alt="Image description">
+                <p class="image-caption">Figure 1: 논문 대표 이미지</p>
             </div>
 
-        </main>
+            <!-- Paper Details -->
+            <div class="paper-details">
+                <h2>Collaborating with a Text-Based Chatbot: An Exploration of Real-World Collaboration Strategies Enacted during Human-Chatbot Interactions</h2>
+                <p><strong>Authors:</strong> A Rapp, A Boldi, L Curti, A Perrucci, R Simeoni</p>
+                <p><strong>Conference:</strong> Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems, 2023</p>
+                <p><strong>Brief Introduction:</strong> 사람들이 자신의 특정 목표를 달성하기 위해 AI Chatbot과 어떻게 협력하는지, 그 방식을 실제 Chatbot Dialogue 분석을 통해 알아낸 연구</p>
+            </div>
+
+            <!-- Content with Subheadings -->
+            <div class="content">
+                <!-- Your content here -->
+            </div>
+
+            <!-- Download Section -->
+            <div class="download-section">
+                <a href="./pdf/240206_논문세미나_양은서.pdf" download>Download PDF</a>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 20px;">
+            <p class="post-date">Posted on: <span>February 7, 2024</span></p>
+            <p class="post-author">Author: <span>Eunseo Yang</span></p>
+        </div>
+    </main>
 
     <footer>
         <p>Made by Eunseo Yang/eunseo@gmail.com</p>
     </footer>
-    
+
     <script src="../scripts.js"></script>
 </body>
 </html>
