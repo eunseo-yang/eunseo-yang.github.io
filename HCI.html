@@ -26,6 +26,9 @@
         transition: color 0.3s, border-color 0.3s; 
       }
       .publication-pdf:hover { color: #006400; border-color: #006400; background-color: white; }
+      .keyword { display: inline-block; background-color: #e7f3ec; border-radius: 10px; padding: 5px 10px; margin: 2px; 
+          font-size: 10px; transition: background-color 0.3s, transform 0.3s; }
+      .keyword:hover { background-color: #d1e5d5; transform: translateY(-2px);}
     </style>
 
 </head>
@@ -56,7 +59,11 @@
               <div class="publication-title">Collaborating with a Text-Based Chatbot: An Exploration of Real-World Collaboration Strategies Enacted during Human-Chatbot Interactions</div>
               <div class="publication-authors">A Rapp, A Boldi, L Curti, A Perrucci, R Simeoni</div>
               <div class="publication-details">Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems, 2023</div>
-              <div class="publication-year">Keyword: Chatbot, Collaboration, Grounded Theory Approach</div>
+              <div class="publication-year">
+                    <span class="keyword">Chatbot</span>, 
+                    <span class="keyword">Collaboration</span>, 
+                    <span class="keyword">Grounded Theory Approach</span>
+              </div>
               <a href="https://dl.acm.org/doi/abs/10.1145/3544548.3580995" class="publication-pdf" target="_blank">DOI</a>
             </div>
           </div>
