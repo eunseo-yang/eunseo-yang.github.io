@@ -5,28 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eunseo Yang</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+      .publications { max-width: 1200px; margin: auto; }
+      .publication { display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; }
+      .publication-image { flex: 0 0 10%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+      .publication-image img { max-width: 100%; height: auto; }
+      .publication-content { flex: 2; padding-left: 20px; }
+      .publication-title { font-size: 15px; font-weight: bold; margin-bottom: 10px; }
+      .publication-authors { font-size: 13px; margin-bottom: 5px; }
+      .publication-details { font-size: 13px; margin-bottom: 5px; }
+      .publication-pdf { 
+        text-decoration: none; 
+        color: black; 
+        background-color: white; 
+        padding: 5px 20px; 
+        border-radius: 5px; 
+        font-size: 10px; 
+        border: 1px solid black; 
+        transition: color 0.3s, border-color 0.3s; 
+      }
+      .publication-pdf:hover { color: blue; border-color: #006400; background-color: #006400; }
+    </style>
+
 </head>
 <body>
-        <header>
-            <h1 id="home-link">Eunseo Yang</h1>
-            <nav>
-                <ul>
+    
+    <header>
+        <h1 id="home-link">Eunseo Yang</h1>
+        <nav>
+            <ul>
                 <li><a href="HCI.html">HCI News</a></li>
                 <li><a href="VUI.html">VUI</a></li>
                 <li><a href="Blogs.html">Blogs</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <main>
+            </ul>
+        </nav>
+    </header>
 
-                 <h2>Updating...</h2>
+    <main>
+        <section id="home">
+            <h2>HCI Paper Review</h2>
+        </section>       
+        <div class="publications">
+          <div class="publication">
+            <div class="publication-image">
+              <img src="img/review_paper1.png" alt="논문1의 첫 페이지">
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">Collaborating with a Text-Based Chatbot: An Exploration of Real-World Collaboration Strategies Enacted during Human-Chatbot Interactions</div>
+              <div class="publication-authors">A Rapp, A Boldi, L Curti, A Perrucci, R Simeoni</div>
+              <div class="publication-details">Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems, 2023</div>
+              <div class="publication-year">Keyword: Chatbot, Collaboration, Grounded Theory Approach</div>
+              <a href="https://dl.acm.org/doi/abs/10.1145/3544548.3580995" class="publication-pdf" target="_blank">DOI</a>
+            </div>
+          </div>
 
-        </main>
+          <div class="publication">
+            <div class="publication-image">
+              <img src="img/review_paper1.png" alt="논문1의 첫 페이지">
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">Collaborating with a Text-Based Chatbot: An Exploration of Real-World Collaboration Strategies Enacted during Human-Chatbot Interactions</div>
+              <div class="publication-authors">A Rapp, A Boldi, L Curti, A Perrucci, R Simeoni</div>
+              <div class="publication-details">Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems, 2023</div>
+              <div class="publication-year">Keyword: Chatbot, Collaboration, Grounded Theory Approach</div>
+              <a href="https://dl.acm.org/doi/abs/10.1145/3544548.3580995" class="publication-pdf" target="_blank">DOI</a>
+            </div>
+          </div>
+        </div>
+    </main>
 
     <footer>
-        <p>Made by Eunseo Yang/eunseo@gmail.com</p>
+        <p>Made by Eunseo Yang/eunseo1092@gmail.com</p>
     </footer>
     
     <script src="scripts.js"></script>
