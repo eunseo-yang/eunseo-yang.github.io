@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eunseo Yang</title>
     <link rel="stylesheet" href="../styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: auto; padding: 20px; }
+        img { max-width: 100%; }
+        .image-caption { text-align: center; font-style: italic; margin-bottom: 20px; }
+        .paper-details, .content, .download-section { margin-bottom: 20px; }
+        .paper-details h2, .content h2, .download-section h2 { margin-bottom: 10px; }
+        .paper-details p, .content p { margin-bottom: 10px; }
+        .download-section a { display: inline-block; background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+    </style>
 </head>
 <body>
         <header>
@@ -21,7 +31,37 @@
         
         <main>
 
-                 <h2>What is wrong with this?</h2>
+            <div class="container">
+                <div class="image-section">
+                    <img src="img/review_paper1_img1.png" alt="Image description">
+                    <p class="image-caption">Figure 1: 논문 대표 이미지</p>
+                </div>
+            
+                <!-- Paper Details -->
+                <div class="paper-details">
+                    <h2>Paper Title</h2>
+                    <p><strong>Authors:</strong> Author 1, Author 2, Author 3</p>
+                    <p><strong>Keywords:</strong> Keyword1, Keyword2, Keyword3</p>
+                    <p><strong>Conference:</strong> Conference Name, Year</p>
+                    <p><strong>Brief Introduction:</strong> This paper discusses...</p>
+                </div>
+            
+                <!-- Content with Subheadings -->
+                <div class="content">
+                    <h2>Main Heading</h2>
+                    <h3>Subheading 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <h3>Subheading 2</h3>
+                    <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim...</p>
+                    <!-- Add more subheadings and paragraphs as needed -->
+                </div>
+            
+                <!-- Download Section -->
+                <div class="download-section">
+                    <h2>Download Presentation</h2>
+                    <a href="path/to/your/presentation.ppt" download>Download PPT</a>
+                </div>
+            </div>
 
         </main>
 
