@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eunseo Yang</title>
     <link rel="stylesheet" href="../styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: auto; padding: 20px; }
+        img { max-width: 100%; }
+        .image-caption { text-align: center; font-style: italic; margin-bottom: 20px; }
+        .paper-details, .content, .download-section { margin-bottom: 20px; }
+        .paper-details h2, .content h2, .download-section h2 { margin-bottom: 10px; }
+        .paper-details p, .content p { margin-bottom: 10px; }
+        .download-section a { display: inline-block; background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+    </style>
 </head>
 <body>
         <header>
@@ -21,7 +31,36 @@
         
         <main>
 
-                 <h2>What is wrong with this?</h2>
+            <div class="container">
+                <div class="image-section">
+                    <img src="img/review_paper1_img1.png" alt="Image description">
+                    <p class="image-caption">Figure 1: 논문 대표 이미지</p>
+                </div>
+            
+                <!-- Paper Details -->
+                <div class="paper-details">
+                    <h2>Collaborating with a Text-Based Chatbot: An Exploration of Real-World Collaboration Strategies Enacted during Human-Chatbot Interactions</h2>
+                    <p><strong>Authors:</strong> A Rapp, A Boldi, L Curti, A Perrucci, R Simeoni</p>
+                    <p><strong>Conference:</strong> Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems, 2023</p>
+                    <p><strong>Brief Introduction:</strong> 사람들이 자신의 특정 목표를 달성하기 위해 AI Chatbot과 어떻게 협력하는지, 그 방식을 실제 Chatbot Dialogue 분석을 통해 알아낸 연구</p>
+                </div>
+            
+                <!-- Content with Subheadings -->
+                <div class="content">
+                    <h2>Main Heading</h2>
+                    <h3>Subheading 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <h3>Subheading 2</h3>
+                    <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim...</p>
+                    <!-- Add more subheadings and paragraphs as needed -->
+                </div>
+            
+                <!-- Download Section -->
+                <div class="download-section">
+                    <h2>Download Presentation</h2>
+                    <a href="path/to/your/presentation.ppt" download>Download PPT</a>
+                </div>
+            </div>
 
         </main>
 
