@@ -22,12 +22,10 @@ var keywordsColors = {
 };
 
 function generateRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
+    var hue = Math.floor(Math.random() * 360);
+    var saturation = 50; 
+    var lightness = 85;
+    return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
 }
 
 function assignColorsToKeywords() {
