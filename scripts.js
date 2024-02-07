@@ -13,12 +13,12 @@ document.querySelectorAll('.publication').forEach(publication => {
 });
 
 var keywordsColors = {
-    "Chatbot": "#69c2b0",
-    "Collaboration": "#a569c2",
-    "Grounded Theory Approach": "#c26986",
-    "Context-aware computing": "#c2a369",
-    "Personalization": "#c2b769",
-    "LLM": "#8fc269"
+    "Chatbot": "hsl(160, 50%, 85%)",
+    "Collaboration": "hsl(276, 50%, 85%)",
+    "Grounded Theory Approach": "hsl(340, 50%, 85%)",
+    "Context-aware computing": "hsl(40, 50%, 85%)",
+    "Personalization": "hsl(60, 50%, 85%)",
+    "LLM": "hsl(96, 50%, 85%)"
 };
 
 function generateRandomColor() {
