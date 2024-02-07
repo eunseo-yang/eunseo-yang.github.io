@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.querySelectorAll('.publication').forEach(publication => {
     publication.addEventListener('click', function() {
-        window.location.href = this.getAttribute('data-url');
+        var destinationUrl = this.getAttribute('data-url'); 
+        window.location.href = destinationUrl; 
     });
 });
 
