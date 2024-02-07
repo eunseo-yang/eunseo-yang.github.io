@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eunseo Yang</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
+    <style>        
       .publications { max-width: 1200px; margin: auto; }
-      .publication { display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; }
+      .publication { display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease;}
+      .publication:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.2);}  
       .publication-image { flex: 0 0 10%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
       .publication-image img { max-width: 100%; height: auto; }
       .publication-content { flex: 2; padding-left: 20px; }
@@ -47,7 +48,7 @@
             <h2>HCI Paper Review</h2>
         </section>       
         <div class="publications">
-          <div class="publication">
+          <div class="publication" data-url="review_paper1_detail_page.html">
             <div class="publication-image">
               <img src="img/review_paper1.png" alt="논문1의 첫 페이지">
             </div>
@@ -60,7 +61,7 @@
             </div>
           </div>
 
-          <div class="publication">
+          <div class="publication" data-url="review_paper2_detail_page.html">
             <div class="publication-image">
               <img src="img/review_paper2.png" alt="논문1의 첫 페이지">
             </div>
