@@ -3,6 +3,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap'); /* font-family: 'Antic Slab', serif; */
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap'); /* font-family: 'Poiret One', sans-serif; */
 
+@font-face {
+    font-family: 'AcornBrush';
+    src: url('/assets/fonts/AcornBrush.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LightStories';
+    src: url('/assets/fonts/LightStories.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MarkerFelt';
+    src: url('/assets/fonts/MarkerFelt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MorningShore';
+    src: url('/assets/fonts/MorningShore.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .profile-info {
     display: flex; /* 이미지와 글씨를 가로로 정렬 */
     align-items: center; /* 세로 방향으로 중앙 정렬 */
@@ -21,7 +49,8 @@
 .profile-text {margin-left: 40px; }
 
 body {
-    font-family: 'Raleway';
+    /* font-family: 'Raleway'; */
+    font-family: 'AcornBrush', sans-serif;
     line-height: 1.6;
     color: #000;
     background-color: #fff;
@@ -34,7 +63,7 @@ body {
 
 header {
     /* font-family: 'Poiret One', cursive; */
-    font-family: 'Poiret One', sans-serif;
+    font-family: 'MarkerFelt', sans-serif;
     font-weight: 800;
     display: flex;
     justify-content: space-between;
@@ -67,7 +96,7 @@ nav li {
 }
 
 nav a {
-    font-family: 'Poiret One', sans-serif;
+    font-family: 'MarkerFelt', sans-serif;
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
