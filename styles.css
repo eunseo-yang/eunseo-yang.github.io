@@ -5,28 +5,28 @@
 
 @font-face {
     font-family: 'AcornBrush';
-    src: url('./assets/fonts/AcornBrush.ttf') format('truetype');
+    src: url('assets/fonts/AcornBrush.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'LightStories';
-    src: url('./assets/fonts/LightStories.otf') format('opentype');
+    src: url('assets/fonts/LightStories.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MarkerFelt';
-    src: url('./assets/fonts/MarkerFelt.ttf') format('truetype');
+    src: url('assets/fonts/MarkerFelt.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MorningShore';
-    src: url('./assets/fonts/MorningShore.ttf') format('truetype');
+    src: url('assets/fonts/MorningShore.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
