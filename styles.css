@@ -1,36 +1,9 @@
 /* 
-@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap'); /* Bad script font-family: 'Bad Script', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap'); /* font-family: 'Antic Slab', serif; */
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap'); /* font-family: 'Poiret One', sans-serif; */
-
-
-@font-face {
-    font-family: 'AcornBrush';
-    src: url('assets/fonts/AcornBrush.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'LightStories';
-    src: url('assets/fonts/LightStories.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'MarkerFelt';
-    src: url('assets/fonts/MarkerFelt.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'MorningShore';
-    src: url('assets/fonts/MorningShore.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .profile-info {
@@ -51,8 +24,7 @@
 .profile-text {margin-left: 40px; }
 
 body {
-    /* font-family: 'Raleway'; */
-    font-family: 'LightStories', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #000;
     background-color: #fff;
@@ -65,7 +37,7 @@ body {
 
 header {
     /* font-family: 'Poiret One', cursive; */
-    font-family: 'MarkerFelt', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 800;
     display: flex;
     justify-content: space-between;
@@ -98,7 +70,7 @@ nav li {
 }
 
 nav a {
-    font-family: 'MarkerFelt', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -118,7 +90,7 @@ section {
 }
 
 h1 {
-    font-family: 'AcornBrush', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 5px; /* 상단바 bottom border - h1 글씨 간격 */
     text-align: left; 
     align-items: center;
@@ -131,12 +103,12 @@ h1:hover {
 }
 
 h2 {
-    font-family: 'MarkerFelt', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 10px;
 }
 
 footer {
-    font-family: 'MorningShore', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #000;
     text-align: center;
     padding: 10px;
