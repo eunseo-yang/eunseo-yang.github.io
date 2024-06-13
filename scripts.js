@@ -20,6 +20,8 @@ var keywordsColors = {
     "Context-aware computing": "#c2a369",
     "Personalization": "#c2b769",
     "LLM": "#8fc269"
+    "Reinforcement Learning" : "#a569c3",
+    "Proactive System" : "#87ceeb"
 };
 
 function generateRandomColor() {
