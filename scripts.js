@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const homeLink = document.getElementById("home-link");
 
   homeLink.addEventListener("click", function() {
-    window.location.href = "https://eunseo-yang.github.io";
+    window.location.href = "index.html"; // 처음 페이지로 이동
   });
 });
 
