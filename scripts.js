@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const homeLink = document.querySelector("#home-link a"); // 'a' 태그를 명시적으로 찾습니다.
+  const homeLink = document.getElementById("home-link"); // 'home-link' id를 가진 요소를 찾습니다.
 
-  homeLink.addEventListener("click", function(event) {
-    event.preventDefault(); // 기본 이벤트를 막습니다.
+  homeLink.addEventListener("click", function() {
     window.location.href = "https://eunseo-yang.github.io/"; // 첫 페이지로 이동합니다.
   });
 });
+
 
 
 
