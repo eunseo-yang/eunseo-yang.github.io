@@ -2,9 +2,10 @@ document.addEventListener("DOMContentLoaded", function() {
   const homeLink = document.getElementById("home-link");
 
   homeLink.addEventListener("click", function() {
-    window.location.href = "index.html"; // 처음 페이지로 이동
+    window.location.href = "https://eunseo-yang.github.io/"; // 처음 페이지로 이동
   });
 });
+
 
 var keywordsColors = {
     "Chatbot": "#69c2b0",
