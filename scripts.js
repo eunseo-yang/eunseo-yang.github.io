@@ -6,13 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-document.querySelectorAll('.publication').forEach(publication => {
-    publication.addEventListener('click', function() {
-        var destinationUrl = this.getAttribute('data-url'); 
-        window.location.href = destinationUrl; 
-    });
-});
-
 var keywordsColors = {
     "Chatbot": "#69c2b0",
     "Collaboration": "#a569c2",
