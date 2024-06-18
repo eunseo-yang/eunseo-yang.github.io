@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Academicons';
+    src: url('/assets/fonts/academicons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .roboto-regular {
@@ -9,6 +15,7 @@
 .profile-info {
     display: flex; /* 이미지와 글씨를 가로로 정렬 */
     align-items: center; /* 세로 방향으로 중앙 정렬 */
+  font-family: 'Academicons', sans-serif;
 }
 
 .profile-image {
@@ -24,7 +31,7 @@
 .profile-text {margin-left: 40px; }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Academicons', sans-serif;
     line-height: 1.6;
     color: #000;
     background-color: #fff;
@@ -37,7 +44,8 @@ body {
 
 header {
     /* font-family: 'Poiret One', cursive; */
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif;*/
+  font-family: 'Academicons', sans-serif;
     font-weight: 800;
     display: flex;
     justify-content: space-between;
@@ -70,7 +78,7 @@ nav li {
 }
 
 nav a {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Academicons', sans-serif;
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -90,7 +98,7 @@ section {
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Academicons', sans-serif;
     margin-bottom: 5px; /* 상단바 bottom border - h1 글씨 간격 */
     text-align: left; 
     align-items: center;
@@ -103,12 +111,12 @@ h1:hover {
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Academicons', sans-serif;
     margin-bottom: 10px;
 }
 
 footer {
-    font-family: 'Roboto', sans-serif;
+   font-family: 'Academicons', sans-serif;
     color: #000;
     text-align: center;
     padding: 10px;
