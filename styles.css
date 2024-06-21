@@ -198,11 +198,13 @@ h3.left-align {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
     overflow: hidden;
-    width: calc(33.333% - 1rem);
+    width: 32%; /* 고정된 너비 설정 */
+    max-width: 32%;
+    min-width: 32%;
+    height: 350px; /* 고정된 높이 설정 */
     cursor: pointer;
     transition: transform 0.3s ease;
     text-align: center;
-    height: 350px; /* 고정된 높이 설정 */
 }
 
 .project:hover {
