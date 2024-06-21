@@ -3,29 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eunseo Yang</title>
+    <title>Eunseo Yang - Projects</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <header>
-            <h1 id="home-link">HOME</h1>
-            <nav>
-                <ul>
+    <header>
+        <h1 id="home-link">HOME</h1>
+        <nav>
+            <ul>
                 <li><a href="Review.html">Review</a></li>
-                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="index.html">Projects</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <main>
-
-                 <h2>Updating...</h2>
-
-        </main>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project" onclick="location.href='project1.html'">
+                <img src="project1.jpg" alt="Project 1 Image">
+                <div class="project-summary">
+                    <h3>Project 1</h3>
+                    <p><strong>Date:</strong> January 2023 - March 2023</p>
+                    <p><strong>Keywords:</strong> AI, Machine Learning, Data Analysis</p>
+                    <p class="description">Brief description of Project 1...</p>
+                </div>
+            </div>
+            <div class="project" onclick="location.href='project2.html'">
+                <img src="project2.jpg" alt="Project 2 Image">
+                <div class="project-summary">
+                    <h3>Project 2</h3>
+                    <p><strong>Date:</strong> April 2023 - June 2023</p>
+                    <p><strong>Keywords:</strong> Web Development, UX Design</p>
+                    <p class="description">Brief description of Project 2...</p>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+    </main>
 
     <footer>
-        <p>Made by Eunseo Yang/eunseo@gmail.com</p>
+        <p>Made by Eunseo Yang / eunseo@gmail.com</p>
     </footer>
     
     <script src="scripts.js"></script>
