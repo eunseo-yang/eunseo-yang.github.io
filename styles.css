@@ -203,13 +203,14 @@ h3.left-align {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
     overflow: hidden;
-    flex: 1 1 calc(33.333% - 1rem);
+    width: calc(33.333% - 1rem); /* 고정된 너비 설정 */
     cursor: pointer;
     transition: transform 0.3s ease;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
+
 
 .project:hover {
     transform: scale(1.05);
