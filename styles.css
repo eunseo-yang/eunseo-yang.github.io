@@ -207,6 +207,8 @@ h3.left-align {
     cursor: pointer;
     transition: transform 0.3s ease;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .project:hover {
@@ -217,16 +219,27 @@ h3.left-align {
     width: 100%;
     height: auto;
     display: block;
+    max-height: 200px;
+    object-fit: cover;
 }
 
 .project-summary {
     padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-summary h4 {
     margin-top: 0.5rem;
     color: #007acc;
 }
+
+.project-summary p {
+    margin: 0.5rem 0;
+}
+
 
 footer {
     font-family: 'Academicons', sans-serif;
