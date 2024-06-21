@@ -173,7 +173,7 @@ a:hover {
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 2rem;
 }
 
@@ -237,7 +237,6 @@ h3.left-align {
     color: #007acc;
     font-size: 1rem; /* 글자 크기 조정 */
 }
-
 
 footer {
     font-family: 'Academicons', sans-serif;
