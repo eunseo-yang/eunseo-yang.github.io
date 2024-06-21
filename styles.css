@@ -185,10 +185,32 @@ h3.left-align {
     text-align: left;
 }
 
-.project-container {
+#projects {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #007acc;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+h3.left-align {
+    text-align: left;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
@@ -196,11 +218,8 @@ h3.left-align {
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 1rem 0;
     overflow: hidden;
-    width: 32%; /* 고정된 너비 설정 */
-    max-width: 32%;
-    min-width: 32%;
+    width: 100%; /* 고정된 너비 설정 */
     height: 350px; /* 고정된 높이 설정 */
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -232,6 +251,7 @@ h3.left-align {
     color: #007acc;
     font-size: 1rem; /* 글자 크기 조정 */
 }
+
 
 footer {
     font-family: 'Academicons', sans-serif;
