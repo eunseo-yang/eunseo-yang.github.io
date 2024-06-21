@@ -229,11 +229,13 @@ h3.left-align {
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+font-family: 'Academicons', sans-serif;
+color: #000;
+text-align: center;
+padding: 10px;
+border-top: 1px solid #ccc;
+}
+
+footer p {
+margin: 0;
 }
