@@ -177,10 +177,25 @@ a:hover {
     }
 }
 
-/* projects.html */
+
+
 #projects {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #007acc;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+h3.left-align {
+    text-align: left;
 }
 
 .project {
@@ -189,7 +204,7 @@ a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
     overflow: hidden;
-    width: 100%;
+    width: 30%;
     cursor: pointer;
     transition: transform 0.3s ease;
     text-align: center;
@@ -212,11 +227,4 @@ a:hover {
 .project-summary h4 {
     margin-top: 0.5rem;
     color: #007acc;
-}
-
-h3 {
-    margin-top: 2rem;
-    color: #007acc;
-    border-bottom: 2px solid #007acc;
-    padding-bottom: 0.5rem;
 }
