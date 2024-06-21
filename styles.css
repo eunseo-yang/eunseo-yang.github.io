@@ -228,7 +228,18 @@ h3.left-align {
     color: #007acc;
 }
 
+.status {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9rem;
+}
 
+.status.ongoing {
+    background-color: orange;
+}
 
 footer {
     font-family: 'Academicons', sans-serif;
