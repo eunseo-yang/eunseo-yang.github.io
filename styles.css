@@ -209,8 +209,8 @@ h3.left-align {
     text-align: center;
     display: flex;
     flex-direction: column;
+    flex: none; /* flex 속성 제거 */
 }
-
 
 .project:hover {
     transform: scale(1.05);
