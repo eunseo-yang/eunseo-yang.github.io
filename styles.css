@@ -209,7 +209,7 @@ h3.left-align {
     text-align: center;
     display: flex;
     flex-direction: column;
-    flex: none; /* flex 속성 제거 */
+    flex-grow: 1; /* flex-grow 속성 추가 */
 }
 
 .project:hover {
