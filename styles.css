@@ -201,13 +201,13 @@ h3.left-align {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
     overflow: hidden;
-    width: calc(50% - 1rem); /* 한 행에 2개 배치될 수 있도록 너비 설정 */
+    width: calc(40% - 1rem); /* 한 행에 2개 배치될 수 있도록 너비 설정 */
     cursor: pointer;
     transition: transform 0.3s ease;
     text-align: center;
     display: flex;
     flex-direction: column;
-    flex-basis: calc(50% - 1rem); /* 너비 계산을 위한 flex-basis 설정 */
+    flex-basis: calc(40% - 1rem); /* 너비 계산을 위한 flex-basis 설정 */
     box-sizing: border-box; /* 박스 크기 계산 방식 설정 */
 }
 
