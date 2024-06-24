@@ -167,28 +167,6 @@ a:hover {
 
 
 
-#projects {
-    display: flex;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-h3 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #007acc;
-    border-bottom: 2px solid #007acc;
-    padding-bottom: 0.5rem;
-    width: 100%;
-}
-
-h3.left-align {
-    text-align: left;
-}
-
 .project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 한 행에 2개의 프로젝트 배치 */
@@ -201,11 +179,12 @@ h3.left-align {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
     overflow: hidden;
-    width: calc(50% - 1rem); /* 한 행에 2개 배치될 수 있도록 너비 설정 */
+    width: 100%; /* 너비 100%로 설정 */
     cursor: pointer;
     transition: transform 0.3s ease;
     text-align: center;
     display: flex;
+    flex-direction: column;
 }
 
 .project:hover {
@@ -236,6 +215,7 @@ h3.left-align {
 .project-summary p {
     margin: 0.5rem 0;
 }
+
 
 footer {
     font-family: 'Academicons', sans-serif;
