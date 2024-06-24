@@ -165,55 +165,77 @@ a:hover {
     }
 }
 
+#projects {
+    display: flex;
+    flex-direction: column;
+}
 
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #007acc;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+h3.left-align {
+    text-align: left;
+}
 
 .project-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 한 행에 2개의 프로젝트 배치 */
-    gap: 1rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 1rem;
 }
 
 .project {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 1rem 0;
-    overflow: hidden;
-    width: 100%; /* 너비 100%로 설정 */
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+background: white;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+margin: 1rem 0;
+overflow: hidden;
+width: calc(50% - 1rem); /* 한 행에 2개 배치될 수 있도록 너비 설정 */
+cursor: pointer;
+transition: transform 0.3s ease;
+text-align: center;
+display: flex;
 }
 
-.project:hover {
-    transform: scale(1.05);
+.project
+{
+transform: scale(1.05);
 }
 
 .project img {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-height: 200px;
-    object-fit: cover;
+width: 100%;
+height: auto;
+display: block;
+max-height: 200px;
+object-fit: cover;
 }
 
 .project-summary {
-    padding: 1rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+padding: 1rem;
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
 .project-summary h4 {
-    margin-top: 0.5rem;
-    color: #007acc;
+margin-top: 0.5rem;
+color: #007acc;
 }
 
 .project-summary p {
-    margin: 0.5rem 0;
+margin: 0.5rem 0;
 }
 
 
