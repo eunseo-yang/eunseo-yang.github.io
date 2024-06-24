@@ -189,8 +189,9 @@ h3.left-align {
 }
 
 .project-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 한 행에 2개의 프로젝트 배치 */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 1rem;
 }
 
@@ -200,12 +201,14 @@ h3.left-align {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
     overflow: hidden;
-    width: 100%; /* 그리드 셀의 전체 너비 차지 */
+    width: calc(50% - 1rem); /* 한 행에 2개 배치될 수 있도록 너비 설정 */
     cursor: pointer;
     transition: transform 0.3s ease;
     text-align: center;
     display: flex;
     flex-direction: column;
+    flex-basis: calc(50% - 1rem); /* 너비 계산을 위한 flex-basis 설정 */
+    box-sizing: border-box; /* 박스 크기 계산 방식 설정 */
 }
 
 .project:hover {
