@@ -169,7 +169,6 @@ a:hover {
 
 #projects {
     display: flex;
-    flex-direction: column;
 }
 
 h2 {
@@ -208,7 +207,6 @@ h3.left-align {
     transition: transform 0.3s ease;
     text-align: center;
     display: flex;
-    flex-direction: column;
 }
 
 .project:hover {
