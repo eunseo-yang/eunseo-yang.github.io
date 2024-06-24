@@ -190,9 +190,8 @@ h3.left-align {
 }
 
 .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 한 행에 2개의 프로젝트 배치 */
     gap: 1rem;
 }
 
