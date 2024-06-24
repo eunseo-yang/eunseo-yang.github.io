@@ -200,7 +200,7 @@ h3.left-align {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
     overflow: hidden;
-    width: 50%; /* 그리드 셀의 전체 너비 차지 */
+    width: 100%; /* 그리드 셀의 전체 너비 차지 */
     cursor: pointer;
     transition: transform 0.3s ease;
     text-align: center;
