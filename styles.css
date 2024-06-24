@@ -210,6 +210,13 @@ h3.left-align {
     box-sizing: border-box; /* 박스 크기 계산 방식 설정 */
 }
 
+@media (max-width: 768px) {
+    .project {
+        width: 100%; /* 작은 화면에서는 한 행에 하나씩 배치 */
+    }
+}
+
+
 .project:hover {
     transform: scale(1.05);
 }
