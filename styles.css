@@ -189,53 +189,52 @@ h3.left-align {
 }
 
 .project-container {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 한 행에 2개의 프로젝트 배치 */
+    gap: 1rem;
 }
 
 .project {
-background: white;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-margin: 1rem 0;
-overflow: hidden;
-width: calc(50% - 1rem); /* 한 행에 2개 배치될 수 있도록 너비 설정 */
-cursor: pointer;
-transition: transform 0.3s ease;
-text-align: center;
-display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    overflow: hidden;
+    width: 100%; /* 그리드 셀의 전체 너비 차지 */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.project
-{
-transform: scale(1.05);
+.project:hover {
+    transform: scale(1.05);
 }
 
 .project img {
-width: 100%;
-height: auto;
-display: block;
-max-height: 200px;
-object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 200px;
+    object-fit: cover;
 }
 
 .project-summary {
-padding: 1rem;
-flex: 1;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-summary h4 {
-margin-top: 0.5rem;
-color: #007acc;
+    margin-top: 0.5rem;
+    color: #007acc;
 }
 
 .project-summary p {
-margin: 0.5rem 0;
+    margin: 0.5rem 0;
 }
 
 
