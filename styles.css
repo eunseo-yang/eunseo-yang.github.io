@@ -166,8 +166,8 @@ a:hover {
 }
 
 #projects {
-    display: flex;
-    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h2 {
@@ -201,13 +201,13 @@ h3.left-align {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
     overflow: hidden;
-    width: calc(50% - 1rem); /* 한 행에 2개 배치될 수 있도록 너비 조정 */
+    width: calc(50% - 1rem); /* 한 행에 두 개씩 배치 */
     cursor: pointer;
     transition: transform 0.3s ease;
     text-align: center;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box; /* 박스 크기 계산 방식 설정 */
+    box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
@@ -233,8 +233,6 @@ h3.left-align {
     padding: 1rem;
     flex: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .project-summary h4 {
