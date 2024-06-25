@@ -199,9 +199,9 @@ h3.left-align {
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 1rem 0;
+    margin: 1rem;
     overflow: hidden;
-    width: calc(50% - 0.5rem); /* 한 행에 두 개씩 배치 */
+    width: calc(50% - 2rem); /* 한 행에 두 개씩 배치 */
     cursor: pointer;
     transition: transform 0.3s ease;
     text-align: center;
