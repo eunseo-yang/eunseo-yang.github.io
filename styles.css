@@ -189,31 +189,23 @@ h3.left-align {
 }
 
 .project-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 한 행에 2개의 프로젝트 배치 */
     gap: 1rem;
-    justify-content: space-between; /* 공간을 균등하게 배분 */
-    align-items: stretch;
 }
+
 .project {
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 1rem;
+    margin: 1rem 0;
     overflow: hidden;
-    width: calc(50% - 2rem); /* 한 행에 두 개씩 배치 */
     cursor: pointer;
     transition: transform 0.3s ease;
     text-align: center;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-    .project {
-        width: 100%; /* 작은 화면에서는 한 행에 하나씩 배치 */
-    }
+    justify-content: stretch; /* 프로젝트 아이템이 컨테이너를 가득 채우도록 */
 }
 
 .project:hover {
