@@ -170,71 +170,60 @@ a:hover {
     margin: 0 auto;
 }
 
-h2 {
+#projects h2 {
     text-align: center;
-    margin-bottom: 2rem;
-}
-
-h3 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #007acc;
-    border-bottom: 2px solid #007acc;
-    padding-bottom: 0.5rem;
-    width: 100%;
-}
-
-h3.left-align {
-    text-align: left;
-}
-
-.project-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 한 행에 2개의 프로젝트 배치 */
-    gap: 1rem;
+    margin-bottom: 30px;
 }
 
 .project {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 1rem 0;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: stretch; /* 프로젝트 아이템이 컨테이너를 가득 채우도록 */
+    align-items: center;
+    margin: 15px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    width: calc(50% - 40px); /* Adjusting width for two projects in a row */
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-summary {
+    text-align: center;
+    padding: 10px;
+}
+
+.project-summary h4 {
+    margin: 10px 0 5px 0;
+}
+
+.project-summary p {
+    margin: 0;
+    color: #555;
+}
+
+#projects .project {
+    box-sizing: border-box;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .project:hover {
     transform: scale(1.05);
 }
 
-.project img {
+.left-align {
+    text-align: left;
     width: 100%;
-    height: auto;
-    display: block;
-    max-height: 200px;
-    object-fit: cover;
-}
-
-.project-summary {
-    padding: 1rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.project-summary h4 {
-    margin-top: 0.5rem;
-    color: #007acc;
-}
-
-.project-summary p {
-    margin: 0.5rem 0;
+    margin-top: 30px;
 }
 
 footer {
