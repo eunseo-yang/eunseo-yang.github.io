@@ -193,9 +193,8 @@ h3.left-align {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-between; /* 공간을 균등하게 배분 */
+    align-items: stretch;
 }
-.project-container.stretch{align-items: stretch;}
-
 .project {
     background: white;
     border-radius: 10px;
