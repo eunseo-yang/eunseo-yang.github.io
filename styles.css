@@ -185,7 +185,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15px;
+    margin: 10px;
     cursor: pointer;
     border: 1px solid #ddd;
     padding: 10px;
