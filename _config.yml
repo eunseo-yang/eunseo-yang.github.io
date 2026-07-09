@@ -34,7 +34,7 @@ defaults:
       path: ""
       type: blog
     values:
-      layout: post
+      layout: blog-post
 
 markdown: kramdown
 exclude:
