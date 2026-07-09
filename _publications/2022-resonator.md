@@ -1,7 +1,7 @@
 ---
 title: "Classifiable Limiting Mass Change Detection in a Graphene Resonator Using Applied Machine Learning"
-authors: "Miri Seo¹*, **Eunseo Yang¹***, Dong Hoon Shin, Yugyeong Je, Chirlmin Joo, Kookjin Lee, Sang Wook Lee"
-venue: "2022"
+authors: "Miri Seo¹\\*, **Eunseo Yang¹**\\*, Dong Hoon Shin, Yugyeong Je, Chirlmin Joo, Kookjin Lee, Sang Wook Lee†"
+venue: "ACS Applied Electronic Materials"
 year: 2022
 date: 2022-01-01
 image: /img/Paper2.png

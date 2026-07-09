@@ -1,6 +1,6 @@
 ---
 title: "Understanding the Use of AI-Based Audio Generation Models by End-Users"
-authors: "Jiyeon Han¹*, **Eunseo Yang²***, Uran Oh²†"
+authors: "Jiyeon Han¹\\*, **Eunseo Yang²**\\*, Uran Oh²†"
 venue: "CHI EA '24, May 11–16, 2024, Honolulu, HI, USA"
 year: 2024
 date: 2024-05-11

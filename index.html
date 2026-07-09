@@ -8,7 +8,7 @@ title: Home
   <div class="hero-text reveal">
     <p class="hero-eyebrow">{{ site.tagline }}</p>
     <h1>Hi, I'm Eunseo Yang.</h1>
-    <p>I recently completed my M.S. in Human-AI Interaction and am currently working on applying Large Language Models (LLMs) to solve a variety of real-world challenges within industry.</p>
+    <p>I completed my M.S. in Human-AI Interaction and am currently working on applying Large Language Models (LLMs) to solve a variety of real-world challenges within industry.</p>
     <p>My research interests lie in Voice User Interfaces (VUI), context-aware systems, and user experience (UX). I am particularly interested in designing intelligent systems that adapt to people rather than requiring people to adapt to technology.</p>
     <p>I study how people naturally interact with technology in their everyday lives and explore how AI can seamlessly integrate into those interactions. My goal is to create human-centered experiences that make advanced technologies more accessible, intuitive, and meaningful for everyone.</p>
 
@@ -19,7 +19,7 @@ title: Home
   <div class="section-title"><h2>About Me</h2></div>
   <ul class="timeline">
     <li><strong>Voronoi Inc.</strong><span class="when">(01/2025 - present)</span><br>I've been working on building agentic AI systems to enhance employee efficiency.</li>
-    <li><strong>Human-Computer Interaction Lab</strong> <span class="when">(09/2023 – 08/2025)</span>, Ewha Womans University.<br>I've started my master's program! <a href="https://hcil-ewha.github.io/homepage/" target="_blank" rel="noopener">HCIL@EWHA</a></li>
+    <li><strong>Human-Computer Interaction Lab</strong> <span class="when">(09/2023 – 08/2025)</span>, Ewha Womans University.<br>Completed my master's, studying Human-Computer Interaction (HCI), UX, and digital accessibility. <a href="https://hcil-ewha.github.io/homepage/" target="_blank" rel="noopener">HCIL@EWHA</a></li>
     <li><strong>Kyung Hee University (KHU) Medical Center</strong> <span class="when">(11/2022 – 07/2023)</span>.<br>Worked as an AI researcher making a diagnosis-assisted tool.</li>
     <li><strong>AI Computing Platform Lab</strong> <span class="when">(2022)</span>, Ewha Womans University.<br>Worked as an edge AI research intern. <a href="https://acpl.ewha.ac.kr/" target="_blank" rel="noopener">ACPL@EWHA</a></li>
     <li><strong>Bio &amp; Nano Electro-Mechanics Lab</strong> <span class="when">(2020 – 2022)</span>, Ewha Womans University.<br>Undergraduate researcher on AI algorithms for signal and object detection. <a href="https://sites.google.com/view/bnem-ewha/home?authuser=0" target="_blank" rel="noopener">BNEM@EWHA</a></li>
@@ -28,6 +28,7 @@ title: Home
 
 <section class="section">
   <div class="section-title"><h2>Publications</h2></div>
+  <p class="pub-legend" style="color: var(--ink-faint); font-size: .82rem; margin-top: -12px;">* Equal contribution &nbsp;·&nbsp; † Corresponding author</p>
   {% assign pubs = site.publications | sort: "date" | reverse %}
   {% for pub in pubs %}
     {% include publication-card.html pub=pub %}

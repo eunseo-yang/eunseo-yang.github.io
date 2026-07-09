@@ -10,8 +10,7 @@ baseurl: ""
 profile:
   image: /img/img1.png
   github: eunseo-yang
-  instagram: y.eun.seo
-  address: Ewha Womans University, South Korea
+  instagram: yy.eun.seo
 
 collections:
   publications:
@@ -21,6 +20,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+  blog:
+    output: true
+    permalink: /blog/:name/
 
 defaults:
   - scope:
@@ -28,6 +30,11 @@ defaults:
       type: projects
     values:
       layout: project
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: post
 
 markdown: kramdown
 exclude:
