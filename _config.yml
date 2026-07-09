@@ -20,9 +20,8 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
-  blog:
-    output: true
-    permalink: /blog/:name/
+
+future: true
 
 defaults:
   - scope:
@@ -32,9 +31,10 @@ defaults:
       layout: project
   - scope:
       path: ""
-      type: blog
+      type: posts
     values:
       layout: blog-post
+      permalink: /blog/:title/
 
 markdown: kramdown
 exclude:
