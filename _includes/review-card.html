@@ -1,0 +1,22 @@
+{% assign rev = include.rev %}
+<article class="pub-card reveal">
+  {% if rev.image %}
+  <div class="pub-thumb">
+    <img src="{{ rev.image | relative_url }}" alt="{{ rev.title | escape }}" loading="lazy">
+  </div>
+  {% endif %}
+  <div class="pub-body">
+    <h3 class="pub-title">{{ rev.title }}</h3>
+    {% if rev.authors %}<p class="pub-authors">{{ rev.authors }}</p>{% endif %}
+    {% if rev.keywords %}
+    <div class="tags">
+      {% for k in rev.keywords %}<span class="tag keyword">{{ k }}</span>{% endfor %}
+    </div>
+    {% endif %}
+    <p class="pub-venue">{{ rev.venue }}</p>
+    <div class="pub-links">
+      {% if rev.doi %}<a class="btn" href="{{ rev.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+      {% if rev.pdf %}<a class="btn" href="{{ rev.pdf | relative_url }}" target="_blank" rel="noopener">Review PDF</a>{% endif %}
+    </div>
+  </div>
+</article>

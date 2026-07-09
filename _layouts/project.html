@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<article class="detail">
+  <a class="back-link" href="{{ '/Projects.html' | relative_url }}">← All projects</a>
+  <header class="detail-header reveal">
+    <h1>{{ page.title }}</h1>
+    {% if page.tags %}<p class="project-tags">{% for t in page.tags %}#{{ t }} {% endfor %}</p>{% endif %}
+    {% if page.period %}<p class="detail-meta">{{ page.period }}{% if page.role %} · {{ page.role }}{% endif %}</p>{% endif %}
+  </header>
+
+  {% if page.image %}
+  <figure class="detail-hero reveal">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+  </figure>
+  {% endif %}
+
+  <div class="detail-body reveal">
+    {{ content }}
+  </div>
+
+  <div class="detail-links">
+    {% if page.doi %}<a class="btn" href="{{ page.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+    {% if page.pdf %}<a class="btn" href="{{ page.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+    {% for link in page.links %}<a class="btn" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.name }}</a>{% endfor %}
+  </div>
+</article>

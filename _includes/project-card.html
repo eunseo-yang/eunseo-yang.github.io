@@ -1,0 +1,15 @@
+{% assign proj = include.proj %}
+<a class="project-card reveal" href="{{ proj.url | relative_url }}">
+  {% if proj.image %}
+  <div class="project-thumb">
+    <img src="{{ proj.image | relative_url }}" alt="{{ proj.title | escape }}" loading="lazy">
+  </div>
+  {% endif %}
+  <div class="project-body">
+    <h4>{{ proj.title }}</h4>
+    {% if proj.tags %}
+    <p class="project-tags">{% for t in proj.tags %}#{{ t }} {% endfor %}</p>
+    {% endif %}
+    {% if proj.period %}<span class="project-date">{{ proj.period }}</span>{% endif %}
+  </div>
+</a>

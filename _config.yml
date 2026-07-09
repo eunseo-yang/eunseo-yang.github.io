@@ -1,0 +1,39 @@
+title: Eunseo Yang
+tagline: Human-AI Interaction Researcher
+description: >-
+  Master's student specializing in Human-AI Interaction. Research on
+  personalized conversational AI and context-aware computing.
+email: eunseo1092@gmail.com
+url: "https://eunseo-yang.github.io"
+baseurl: ""
+
+profile:
+  image: /img/img1.png
+  github: eunseo-yang
+  instagram: y.eun.seo
+  address: Ewha Womans University, South Korea
+
+collections:
+  publications:
+    output: false
+  reviews:
+    output: false
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - CONTENT-GUIDE.md
+  - "*.pptx"

@@ -1,39 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eunseo Yang</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1 id="home-link">HOME</h1>
-        <nav>
-            <ul>
-                <li><a href="Review.html">Review</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:eunseo1092@gmail.com">eunseo1092@gmail.com</a></p>
-                <p><i class="fas fa-school"></i> Work Address: Ewha Womans University, South Korea</p>
-                <p><i class="fab fa-github"></i> Github ID: <a href="https://github.com/eunseo-yang" target="_blank">eunseo-yang</a></p>
-                <p><i class="fab fa-instagram"></i> Instagram ID: y.eun.seo</p>
-            </div>
-        </div>
-    </main>
+---
+layout: default
+title: Contact
+---
 
-      <footer>
-        <p>Made by Eunseo Yang/eunseo1092@gmail.com</p>
-    </footer>
-    
-    <script src="scripts.js"></script>
-</body>
-</html>
+<section class="section">
+  <div class="section-title"><h2>Contact</h2></div>
+  <div class="contact-card reveal">
+    <p style="margin-top:0; color: var(--ink-soft);">Feel free to reach out — I'm always happy to talk research and collaboration.</p>
+    <ul>
+      <li><span class="label">Email</span> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      <li><span class="label">Office</span> {{ site.profile.address }}</li>
+      <li><span class="label">GitHub</span> <a href="https://github.com/{{ site.profile.github }}" target="_blank" rel="noopener">{{ site.profile.github }}</a></li>
+      <li><span class="label">Instagram</span> {{ site.profile.instagram }}</li>
+    </ul>
+  </div>
+</section>

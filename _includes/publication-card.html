@@ -1,0 +1,23 @@
+{% assign pub = include.pub %}
+<article class="pub-card reveal">
+  {% if pub.image %}
+  <div class="pub-thumb">
+    <img src="{{ pub.image | relative_url }}" alt="{{ pub.title | escape }}" loading="lazy">
+  </div>
+  {% endif %}
+  <div class="pub-body">
+    <h3 class="pub-title">{{ pub.title }}</h3>
+    {% if pub.authors %}<p class="pub-authors">{{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+    {% if pub.keywords %}
+    <div class="tags">
+      {% for k in pub.keywords %}<span class="tag">{{ k }}</span>{% endfor %}
+    </div>
+    {% endif %}
+    <p class="pub-venue">{{ pub.venue }}{% if pub.year %} · {{ pub.year }}{% endif %}</p>
+    <div class="pub-links">
+      {% if pub.doi %}<a class="btn" href="{{ pub.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+      {% if pub.pdf %}<a class="btn" href="{{ pub.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+      {% for link in pub.links %}<a class="btn" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.name }}</a>{% endfor %}
+    </div>
+  </div>
+</article>

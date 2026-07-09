@@ -1,0 +1,13 @@
+{% assign p = page.url | remove_first: site.baseurl %}
+<header class="site-header">
+  <a class="brand" href="{{ '/' | relative_url }}">Eunseo&nbsp;Yang</a>
+  <nav class="site-nav">
+    <a href="{{ '/' | relative_url }}" class="{% if p == '/' %}active{% endif %}">Home</a>
+    <a href="{{ '/Review.html' | relative_url }}" class="{% if p contains 'Review' %}active{% endif %}">Review</a>
+    <a href="{{ '/Projects.html' | relative_url }}" class="{% if p contains 'roject' %}active{% endif %}">Projects</a>
+    <a href="{{ '/Contact.html' | relative_url }}" class="{% if p contains 'Contact' %}active{% endif %}">Contact</a>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+      <span class="theme-icon-light">☀</span><span class="theme-icon-dark">☾</span>
+    </button>
+  </nav>
+</header>
