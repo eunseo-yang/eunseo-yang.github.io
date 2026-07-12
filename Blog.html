@@ -5,10 +5,10 @@ title: Blog
 
 <section class="section">
   <div class="section-title"><h2>Blog</h2></div>
-  <p style="color: var(--ink-soft); margin-top: -12px;">Thoughts on HCI, UX, and building with AI.</p>
+  <p style="color: var(--ink-soft); margin-top: -12px;"><span data-t="en">Thoughts on HCI, UX, and building with AI.</span><span data-t="ko">HCI, UX, 그리고 AI를 만들며 하는 생각들.</span></p>
   {% assign posts = site.posts %}
   {% if posts.size == 0 %}
-    <p style="color: var(--ink-faint);">No posts yet — check back soon.</p>
+    <p style="color: var(--ink-faint);"><span data-t="en">No posts yet — check back soon.</span><span data-t="ko">아직 글이 없어요 — 곧 올라옵니다.</span></p>
   {% else %}
     <div class="blog-list">
       {% for post in posts %}

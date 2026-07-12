@@ -8,7 +8,7 @@ title: Projects
 
   {% assign order = "Research,Development" | split: "," %}
   {% for cat in order %}
-    <h3 class="subhead">{{ cat }} Projects</h3>
+    <h3 class="subhead"><span data-t="en">{{ cat }} Projects</span><span data-t="ko">{% if cat == "Research" %}연구 프로젝트{% else %}개발 프로젝트{% endif %}</span></h3>
     <div class="projects-grid">
       {% assign items = site.projects | where: "category", cat | sort: "date" | reverse %}
       {% for proj in items %}

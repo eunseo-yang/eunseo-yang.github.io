@@ -9,6 +9,16 @@
 })();
 
 (function () {
+  var btn = document.getElementById('lang-toggle');
+  if (!btn) return;
+  btn.addEventListener('click', function () {
+    var next = document.documentElement.getAttribute('data-lang') === 'ko' ? 'en' : 'ko';
+    document.documentElement.setAttribute('data-lang', next);
+    try { localStorage.setItem('lang', next); } catch (e) {}
+  });
+})();
+
+(function () {
   var els = document.querySelectorAll('.reveal');
   if (!('IntersectionObserver' in window) || !els.length) {
     els.forEach(function (el) { el.classList.add('visible'); });

@@ -1,19 +1,20 @@
 {% assign post = include.post %}
 <a class="blog-card reveal" href="{{ post.url | relative_url }}">
+  <div class="blog-card-body">
+    <div class="blog-pills">
+      {% assign cat = post.category | default: post.tags[0] %}
+      {% if cat %}<span class="blog-pill blog-pill-cat">{{ cat }}</span>{% endif %}
+      {% assign author = post.author | default: site.title %}
+      {% if author %}<span class="blog-pill blog-pill-author">{{ author }}</span>{% endif %}
+    </div>
+    <h3 class="blog-title">{{ post.title }}</h3>
+    <p class="blog-excerpt">
+      <span data-t="en">{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html | strip_newlines | truncatewords: 40 }}{% endif %}</span><span data-t="ko">{% if post.description_ko %}{{ post.description_ko }}{% elsif post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html | strip_newlines | truncatewords: 40 }}{% endif %}</span>
+    </p>
+  </div>
   {% if post.image %}
   <div class="blog-thumb">
     <img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
   </div>
   {% endif %}
-  <div class="blog-card-body">
-    <h3 class="blog-title">{{ post.title }}</h3>
-    <p class="blog-meta">
-      {% if post.date %}{{ post.date | date: "%B %-d, %Y" }}{% endif %}
-      {% if post.tags %} · {% for t in post.tags %}#{{ t }} {% endfor %}{% endif %}
-    </p>
-    <p class="blog-excerpt">
-      {% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html | strip_newlines | truncatewords: 34 }}{% endif %}
-    </p>
-    <span class="blog-readmore">Read more →</span>
-  </div>
 </a>

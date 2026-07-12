@@ -5,7 +5,7 @@ title: Review
 
 <section class="section">
   <div class="section-title"><h2>HCI Paper Reviews</h2></div>
-  <p style="color: var(--ink-soft); margin-top: -12px;">Papers I've read and presented in our HCI seminar.</p>
+  <p style="color: var(--ink-soft); margin-top: -12px;"><span data-t="en">Papers I've read and presented in our HCI seminar.</span><span data-t="ko">HCI 세미나에서 읽고 발표한 논문들입니다.</span></p>
   {% assign revs = site.reviews | sort: "date" | reverse %}
   {% for rev in revs %}
     {% include review-card.html rev=rev %}

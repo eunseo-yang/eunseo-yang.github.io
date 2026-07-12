@@ -2,11 +2,14 @@
 <header class="site-header">
   <a class="brand" href="{{ '/' | relative_url }}">Eunseo&nbsp;Yang</a>
   <nav class="site-nav">
-    <a href="{{ '/' | relative_url }}" class="{% if p == '/' %}active{% endif %}">Home</a>
-    <a href="{{ '/Projects.html' | relative_url }}" class="{% if p contains 'roject' %}active{% endif %}">Projects</a>
-    <a href="{{ '/Review.html' | relative_url }}" class="{% if p contains 'Review' %}active{% endif %}">Review</a>
-    <a href="{{ '/Blog.html' | relative_url }}" class="{% if p contains 'log' %}active{% endif %}">Blog</a>
-    <a href="{{ '/Contact.html' | relative_url }}" class="{% if p contains 'Contact' %}active{% endif %}">Contact</a>
+    <a href="{{ '/' | relative_url }}" class="{% if p == '/' %}active{% endif %}"><span data-t="en">Home</span><span data-t="ko">홈</span></a>
+    <a href="{{ '/Projects.html' | relative_url }}" class="{% if p contains 'roject' %}active{% endif %}"><span data-t="en">Projects</span><span data-t="ko">프로젝트</span></a>
+    <a href="{{ '/Review.html' | relative_url }}" class="{% if p contains 'Review' %}active{% endif %}"><span data-t="en">Review</span><span data-t="ko">리뷰</span></a>
+    <a href="{{ '/Blog.html' | relative_url }}" class="{% if p contains 'log' %}active{% endif %}"><span data-t="en">Blog</span><span data-t="ko">블로그</span></a>
+    <a href="{{ '/Contact.html' | relative_url }}" class="{% if p contains 'Contact' %}active{% endif %}"><span data-t="en">Contact</span><span data-t="ko">연락처</span></a>
+    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language" title="한국어 / English">
+      <span class="lang-en">EN</span><span class="lang-ko">한</span>
+    </button>
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
       <span class="theme-icon-light">☀</span><span class="theme-icon-dark">☾</span>
     </button>
