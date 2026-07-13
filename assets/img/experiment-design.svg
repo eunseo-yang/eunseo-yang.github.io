@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="Comparison of Within-Subjects and Between-Subjects experiment designs. In Within-Subjects, one participant experiences both condition A and condition B over time. In Between-Subjects, participants are split into Group A and Group B, and each group experiences only one condition.">
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#8a8377"/>
+    </marker>
+    <g id="person">
+      <circle cx="0" cy="0" r="12"/>
+      <path d="M-18,44 Q-18,20 0,20 Q18,20 18,44 Z"/>
+    </g>
+    <style>
+      .title  { font-family: Georgia, 'Times New Roman', serif; font-weight: 700; }
+      .label  { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .sub    { fill:#8a8377; }
+      .cap    { fill:#5c554b; }
+      .conn   { stroke:#8a8377; stroke-width:2; fill:none; }
+      .time   { stroke:#c9c1b4; stroke-width:1.5; fill:none; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="1200" height="560" fill="#faf8f4"/>
+  <rect x="1" y="1" width="1198" height="558" fill="none" stroke="#e6e0d6" stroke-width="2" rx="16"/>
+
+  <!-- center divider -->
+  <line x1="600" y1="52" x2="600" y2="508" class="time" stroke-dasharray="3 8"/>
+
+  <!-- =========================== LEFT: WITHIN =========================== -->
+  <text x="64" y="66" class="title" font-size="23" fill="#2f6f4e">Within-Subjects</text>
+  <text x="64" y="94" class="label sub" font-size="14.5">피험자 내 설계 · 한 사람이 모든 조건을 경험</text>
+
+  <!-- all participants (each experiences both) -->
+  <g fill="#5c554b">
+    <g transform="translate(108,232) scale(0.9)"><use href="#person"/></g>
+    <g transform="translate(150,232) scale(0.9)"><use href="#person"/></g>
+    <g transform="translate(129,266) scale(0.9)"><use href="#person"/></g>
+  </g>
+  <text x="129" y="338" class="label cap" font-size="13.5" text-anchor="middle">all participants</text>
+  <text x="129" y="356" class="label sub" font-size="12" text-anchor="middle">참가자 전원</text>
+
+  <!-- flow: each participant -> A -> B -->
+  <path class="conn" d="M182,240 L222,240" marker-end="url(#arrow)"/>
+  <text x="381" y="200" class="label sub" font-size="13" text-anchor="middle">then · 이어서</text>
+  <path class="conn" d="M352,240 L404,240" marker-end="url(#arrow)"/>
+
+  <rect x="228" y="204" width="120" height="72" rx="12" fill="#e4efe8" stroke="#2f6f4e" stroke-width="1.5"/>
+  <text x="288" y="238" class="title" font-size="22" fill="#2f6f4e" text-anchor="middle">A</text>
+  <text x="288" y="260" class="label" font-size="12" fill="#2f6f4e" text-anchor="middle">Condition A</text>
+
+  <rect x="410" y="204" width="120" height="72" rx="12" fill="#f5e8dc" stroke="#b96a34" stroke-width="1.5"/>
+  <text x="470" y="238" class="title" font-size="22" fill="#b96a34" text-anchor="middle">B</text>
+  <text x="470" y="260" class="label" font-size="12" fill="#b96a34" text-anchor="middle">Condition B</text>
+
+  <!-- time axis -->
+  <path class="time" d="M228,300 L530,300" marker-end="url(#arrow)"/>
+  <text x="379" y="320" class="label sub" font-size="12.5" text-anchor="middle">each participant, in sequence · 참가자마다 순서대로</text>
+
+  <!-- caption -->
+  <text x="300" y="456" class="label cap" font-size="17" font-weight="600" text-anchor="middle">Every participant experiences BOTH conditions.</text>
+  <text x="300" y="482" class="label sub" font-size="13.5" text-anchor="middle">적은 인원으로 가능 · 순서 효과 주의 (역균형화 필요)</text>
+
+  <!-- =========================== RIGHT: BETWEEN =========================== -->
+  <text x="640" y="66" class="title" font-size="23" fill="#2f6f4e">Between-Subjects</text>
+  <text x="640" y="94" class="label sub" font-size="14.5">피험자 간 설계 · 그룹을 나눠 하나씩만 경험</text>
+
+  <!-- Group A (green) -->
+  <g fill="#2f6f4e">
+    <g transform="translate(700,188) scale(0.9)"><use href="#person"/></g>
+    <g transform="translate(742,188) scale(0.9)"><use href="#person"/></g>
+    <g transform="translate(721,222) scale(0.9)"><use href="#person"/></g>
+  </g>
+  <text x="721" y="278" class="label cap" font-size="13.5" text-anchor="middle">Group A · A그룹</text>
+  <path class="conn" d="M775,205 L950,205" marker-end="url(#arrow)"/>
+  <rect x="954" y="168" width="122" height="72" rx="12" fill="#e4efe8" stroke="#2f6f4e" stroke-width="1.5"/>
+  <text x="1015" y="202" class="title" font-size="22" fill="#2f6f4e" text-anchor="middle">A</text>
+  <text x="1015" y="224" class="label" font-size="12" fill="#2f6f4e" text-anchor="middle">only Condition A</text>
+
+  <!-- Group B (amber) -->
+  <g fill="#b96a34">
+    <g transform="translate(700,330) scale(0.9)"><use href="#person"/></g>
+    <g transform="translate(742,330) scale(0.9)"><use href="#person"/></g>
+    <g transform="translate(721,364) scale(0.9)"><use href="#person"/></g>
+  </g>
+  <text x="721" y="420" class="label cap" font-size="13.5" text-anchor="middle">Group B · B그룹</text>
+  <path class="conn" d="M775,347 L950,347" marker-end="url(#arrow)"/>
+  <rect x="954" y="310" width="122" height="72" rx="12" fill="#f5e8dc" stroke="#b96a34" stroke-width="1.5"/>
+  <text x="1015" y="344" class="title" font-size="22" fill="#b96a34" text-anchor="middle">B</text>
+  <text x="1015" y="366" class="label" font-size="12" fill="#b96a34" text-anchor="middle">only Condition B</text>
+
+  <!-- caption -->
+  <text x="888" y="456" class="label cap" font-size="17" font-weight="600" text-anchor="middle">Each group sees only ONE condition.</text>
+  <text x="888" y="482" class="label sub" font-size="13.5" text-anchor="middle">순서 효과 없음 · 더 많은 인원 필요</text>
+</svg>

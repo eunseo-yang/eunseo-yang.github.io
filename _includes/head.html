@@ -18,3 +18,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚜️%3C/text%3E%3C/svg%3E">
+
+{% if jekyll.environment == "production" and site.goatcounter %}
+<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+{% endif %}

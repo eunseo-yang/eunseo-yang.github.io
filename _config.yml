@@ -12,6 +12,11 @@ profile:
   github: eunseo-yang
   instagram: yy.eun.seo
 
+# Visitor analytics (GoatCounter). Put your site code here after registering at
+# https://www.goatcounter.com — e.g. if your dashboard is eunseo.goatcounter.com,
+# set: goatcounter: eunseo   (leave empty to disable; only loads on the live site)
+goatcounter: eunseo-yang
+
 collections:
   publications:
     output: false

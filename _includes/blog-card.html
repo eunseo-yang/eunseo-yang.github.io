@@ -3,9 +3,7 @@
   <div class="blog-card-body">
     <div class="blog-pills">
       {% assign cat = post.category | default: post.tags[0] %}
-      {% if cat %}<span class="blog-pill blog-pill-cat">{{ cat }}</span>{% endif %}
-      {% assign author = post.author | default: site.title %}
-      {% if author %}<span class="blog-pill blog-pill-author">{{ author }}</span>{% endif %}
+      {% if cat %}<span class="blog-pill blog-pill-cat cat-{{ cat | slugify }}">{{ cat }}</span>{% endif %}
     </div>
     <h3 class="blog-title">{{ post.title }}</h3>
     <p class="blog-excerpt">
